@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8530976B2AF08F8200A7E8F3 /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8530976A2AF08F8200A7E8F3 /* stops.txt */; };
 		85DBDE712AE42E3600DB5763 /* ChiviApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDE702AE42E3600DB5763 /* ChiviApp.swift */; };
 		85DBDE732AE42E3600DB5763 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDE722AE42E3600DB5763 /* ContentView.swift */; };
 		85DBDE752AE42E3800DB5763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85DBDE742AE42E3800DB5763 /* Assets.xcassets */; };
@@ -14,6 +15,14 @@
 		85DBDE822AE42E3800DB5763 /* ChiviTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDE812AE42E3800DB5763 /* ChiviTests.swift */; };
 		85DBDE8C2AE42E3800DB5763 /* ChiviUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDE8B2AE42E3800DB5763 /* ChiviUITests.swift */; };
 		85DBDE8E2AE42E3800DB5763 /* ChiviUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDE8D2AE42E3800DB5763 /* ChiviUITestsLaunchTests.swift */; };
+		85DBDE9B2AE42E4900DB5763 /* number1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDE9A2AE42E4900DB5763 /* number1.swift */; };
+		85DBDE9D2AE42E4F00DB5763 /* number2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDE9C2AE42E4F00DB5763 /* number2.swift */; };
+		85DBDE9F2AE42E5700DB5763 /* number3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDE9E2AE42E5700DB5763 /* number3.swift */; };
+		85DBDEA12AE42E6A00DB5763 /* Number4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDEA02AE42E6A00DB5763 /* Number4.swift */; };
+		85E6D4F42AF55A5C00AAA28F /* redlineMile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E6D4F32AF55A5C00AAA28F /* redlineMile.swift */; };
+		85E6D4F62AF55EAF00AAA28F /* berlinwall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E6D4F52AF55EAF00AAA28F /* berlinwall.swift */; };
+		85E6D4F82AF560BA00AAA28F /* bluelinepicaso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E6D4F72AF560BA00AAA28F /* bluelinepicaso.swift */; };
+		85E940B92AF48D2400FB50BA /* Combo2and3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E940B82AF48D2300FB50BA /* Combo2and3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8530976A2AF08F8200A7E8F3 /* stops.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = stops.txt; sourceTree = "<group>"; };
 		85DBDE6D2AE42E3600DB5763 /* Chivi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chivi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85DBDE702AE42E3600DB5763 /* ChiviApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiviApp.swift; sourceTree = "<group>"; };
 		85DBDE722AE42E3600DB5763 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +54,14 @@
 		85DBDE872AE42E3800DB5763 /* ChiviUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChiviUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85DBDE8B2AE42E3800DB5763 /* ChiviUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiviUITests.swift; sourceTree = "<group>"; };
 		85DBDE8D2AE42E3800DB5763 /* ChiviUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiviUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		85DBDE9A2AE42E4900DB5763 /* number1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = number1.swift; sourceTree = "<group>"; };
+		85DBDE9C2AE42E4F00DB5763 /* number2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = number2.swift; sourceTree = "<group>"; };
+		85DBDE9E2AE42E5700DB5763 /* number3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = number3.swift; sourceTree = "<group>"; };
+		85DBDEA02AE42E6A00DB5763 /* Number4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number4.swift; sourceTree = "<group>"; };
+		85E6D4F32AF55A5C00AAA28F /* redlineMile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redlineMile.swift; sourceTree = "<group>"; };
+		85E6D4F52AF55EAF00AAA28F /* berlinwall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = berlinwall.swift; sourceTree = "<group>"; };
+		85E6D4F72AF560BA00AAA28F /* bluelinepicaso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bluelinepicaso.swift; sourceTree = "<group>"; };
+		85E940B82AF48D2300FB50BA /* Combo2and3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combo2and3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +92,7 @@
 		85DBDE642AE42E3600DB5763 = {
 			isa = PBXGroup;
 			children = (
+				8530976A2AF08F8200A7E8F3 /* stops.txt */,
 				85DBDE6F2AE42E3600DB5763 /* Chivi */,
 				85DBDE802AE42E3800DB5763 /* ChiviTests */,
 				85DBDE8A2AE42E3800DB5763 /* ChiviUITests */,
@@ -95,7 +114,15 @@
 			isa = PBXGroup;
 			children = (
 				85DBDE702AE42E3600DB5763 /* ChiviApp.swift */,
+				85E6D4F32AF55A5C00AAA28F /* redlineMile.swift */,
 				85DBDE722AE42E3600DB5763 /* ContentView.swift */,
+				85DBDE9A2AE42E4900DB5763 /* number1.swift */,
+				85E6D4F72AF560BA00AAA28F /* bluelinepicaso.swift */,
+				85E6D4F52AF55EAF00AAA28F /* berlinwall.swift */,
+				85DBDE9C2AE42E4F00DB5763 /* number2.swift */,
+				85E940B82AF48D2300FB50BA /* Combo2and3.swift */,
+				85DBDE9E2AE42E5700DB5763 /* number3.swift */,
+				85DBDEA02AE42E6A00DB5763 /* Number4.swift */,
 				85DBDE742AE42E3800DB5763 /* Assets.xcassets */,
 				85DBDE762AE42E3800DB5763 /* Preview Content */,
 			);
@@ -232,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85DBDE782AE42E3800DB5763 /* Preview Assets.xcassets in Resources */,
+				8530976B2AF08F8200A7E8F3 /* stops.txt in Resources */,
 				85DBDE752AE42E3800DB5763 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +285,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85DBDE9B2AE42E4900DB5763 /* number1.swift in Sources */,
+				85E6D4F62AF55EAF00AAA28F /* berlinwall.swift in Sources */,
 				85DBDE732AE42E3600DB5763 /* ContentView.swift in Sources */,
 				85DBDE712AE42E3600DB5763 /* ChiviApp.swift in Sources */,
+				85DBDE9F2AE42E5700DB5763 /* number3.swift in Sources */,
+				85DBDE9D2AE42E4F00DB5763 /* number2.swift in Sources */,
+				85E6D4F82AF560BA00AAA28F /* bluelinepicaso.swift in Sources */,
+				85DBDEA12AE42E6A00DB5763 /* Number4.swift in Sources */,
+				85E6D4F42AF55A5C00AAA28F /* redlineMile.swift in Sources */,
+				85E940B92AF48D2400FB50BA /* Combo2and3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +461,7 @@
 				DEVELOPMENT_TEAM = WHB97KRP2U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your Location helps us give you a better experience";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +491,7 @@
 				DEVELOPMENT_TEAM = WHB97KRP2U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your Location helps us give you a better experience";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
