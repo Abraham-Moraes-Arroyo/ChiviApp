@@ -134,13 +134,42 @@ struct number2: View {
       //2 plan:
       //1 - load markers onto page
       //2 - make
-      ForEach(markers){ marker in
-          Marker(marker.name, coordinate: marker.coordinate)
-               .tint(.brown)
-
-          
-          
-      }
+        
+//        This is the original code
+        
+//      ForEach(markers){ marker in
+//          Marker(marker.name, coordinate: marker.coordinate)
+//               .tint(.brown)
+//
+//          
+//          
+//      }
+        
+//        this is what Devin Implemented/ suggested
+        ForEach(markers){ marker in
+            
+            //        Marker(marker.name, coordinate: marker.coordinate)
+            //        Marker(marker.name,
+            //            image: Image(systemName: "figure.wave").onTapGesture {
+            //              print("GO")
+            //            }
+            //            , coordinate: marker.coordinate)
+            
+            
+            Annotation(marker.name, coordinate: marker.coordinate, anchor: .topLeading){
+                Image(systemName: "figure.wave")
+                    .padding(6)
+                    .foregroundStyle(.white)
+                    .background(.brown)
+                    .clipShape(.capsule)
+                    .onTapGesture {
+                        print("Test")
+                    }
+                
+            }
+        }
+            
+        
         ForEach(monuments){ monument in
             Marker(monument.name, coordinate: monument.coordinate)
         }.tint(.black)
