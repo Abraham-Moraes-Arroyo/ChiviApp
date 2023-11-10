@@ -157,6 +157,7 @@ struct number2: View {
             
             
             Annotation(marker.name, coordinate: marker.coordinate, anchor: .topLeading){
+                
                 Image(systemName: "figure.wave")
                     .padding(6)
                     .foregroundStyle(.white)
@@ -165,6 +166,12 @@ struct number2: View {
                     .onTapGesture {
                         print("Test")
                     }
+//                this is where I am going to make the space act as a potential button when the user taps on it, it will make a screen pop up and have another button there that when tapped it will send the user to the address to that marker location
+                Text(" ").onTapGesture(perform: {
+                    let url = URL(string: "maps://?saddr=&daddr=\(marker.coordinate)")
+                    if UIApplication.shared.canOpenURL(url!) {
+                        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+                    }})
                 
             }
         }
