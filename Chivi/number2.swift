@@ -26,6 +26,9 @@ struct markerData:Identifiable{
         let name: String
         let coordinate: CLLocationCoordinate2D
     }
+
+
+
 struct number2: View {
     
   @State private var cameraPosition: MapCameraPosition = .region(.userRegion)
