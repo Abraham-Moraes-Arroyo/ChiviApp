@@ -133,6 +133,45 @@ struct number2: View {
     
   var body: some View {
       NavigationView{
+          
+//          this is for the blue line trainstops
+          var blues = [
+              markerData(id:0,name: "Ohare Blue Line" , coordinate: Ohare),
+            markerData(id:1,name: "Rosemont Blue Line", coordinate: Rosemont),
+            markerData(id:2,name:"Cumberland Blue Line",coordinate: Cumberland),
+            markerData(id:3,name:"Harlem Ohare Blue Line", coordinate: HarlemOhare),
+            markerData(id:4, name:"JeffersonPark Blue Line", coordinate: JeffersonPark),
+            markerData(id:5, name:"Montrose Blue Line",coordinate: MontroseBlue),
+            markerData(id:6, name:"Irving Park Blue Line", coordinate: IrvingParkBlue),
+            markerData(id:7,name:"Addison Blue Line", coordinate: AddisonBlue),
+              markerData(id:8,name:"Belmont Blue Line",coordinate: BelmontBlue),
+            markerData(id:9,name:"Logan Square Blue Line", coordinate: LoganSquareBlue),
+            markerData(id:10,name:"California Blue Line", coordinate: CaliforniaBlue),
+            markerData(id:11,name:"Western Blue Line", coordinate: WesternBlue),
+            markerData(id:12, name:"Division Blue Line", coordinate: DivisionBlue),
+              markerData(id:13, name:"Chicago Blue Line", coordinate: ChicagoBlue),
+              markerData(id:14, name:"Grand Blue Line", coordinate: GrandBlue),
+              markerData(id:15, name:"ClarkLake Blue Line", coordinate: ClarkLakeBlue),
+              markerData(id:16, name:"Washington Blue Line", coordinate: WashingtonBlue),
+              markerData(id:17, name:"Monroe Blue Line", coordinate: MonroeBlue),
+              markerData(id:18, name:"Jackson Blue Line", coordinate: JacksonBlue),
+              markerData(id:19, name:"LaSalle Blue  Line", coordinate: LaSalleBlue),
+              markerData(id:20, name:"Clinton Blue Line", coordinate: Clintonblue),
+              markerData(id:21, name:"UIC Blue Line", coordinate: UIC),
+              markerData(id:22, name:"Racine Blue Line", coordinate: Racine),
+              markerData(id:23, name:"Illinois Medical District Blue Line", coordinate: IllinoisMedDis),
+              markerData(id:24, name:"Western (CongresBranch) Blue Line", coordinate: WesternCongresBranch),
+              markerData(id:25, name:"KedzieHoman Blue Line", coordinate: KedzieHomanBlue),
+              markerData(id:26, name:"Pulaski Blue Line", coordinate: PulaskiBlue),
+              markerData(id:27, name:"Cicero Blue Line", coordinate: CiceroBlue),
+              markerData(id:28, name:"Austin Blue Line", coordinate: AustinBlue),
+              markerData(id:29, name:"OakPark Blue Line", coordinate: OakParkBlue),
+              markerData(id:31, name:"Harlem ForestPark Blue Line", coordinate: HarlemForestPark),
+              markerData(id:31, name:"ForestPark Blue Line", coordinate: ForestPark)
+          ]
+          
+//          this is for the brown line trainstops
+          
     var markers = [
         markerData(id:0,name: "Kimball Brown Line" , coordinate: Kimball),
       markerData(id:1,name: "Kedzie Brown Line", coordinate: Kedzie),
@@ -159,7 +198,7 @@ struct number2: View {
         markerData(id:22, name:"AdamsWabash Brown Line", coordinate: AdamsWabash),
         markerData(id:23, name:"MadisonWabash Brown Line", coordinate: MadisonWabash),
         markerData(id:24, name:"RandolphWabash Brown Line", coordinate: RandolphWabash)  ]
-//      have it have an image and in that image to have ontap gesture to send the user to an apple maps direction.
+
       
 //      this is for the monuments that are around the brown line
       var monuments = [
