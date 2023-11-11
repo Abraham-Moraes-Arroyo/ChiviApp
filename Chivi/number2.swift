@@ -239,15 +239,33 @@ struct number2: View {
                   }
               }
               
-              //        this is for all of the monuments
+//             this is for the blue line
               
-              //        ForEach(monuments){ monument in
-              //            Marker(monument.name, coordinate: monument.coordinate)
-              //
-              //        }.tint(.black)
+              ForEach(blues){ blue in
+
+                  //            this is for all of the brown line train stops
+                  Annotation(blue.name, coordinate: blue.coordinate, anchor: .topLeading){
+
+                      Image(systemName: "figure.wave")
+                          .padding(6)
+                          .foregroundStyle(.white)
+                          .background(.blue)
+                          .clipShape(.capsule)
+                          .onTapGesture {
+                              print("Test")
+                          }
+                      //                this is where I am going to make the space act as a potential button when the user taps on it, it will make a screen pop up and have another button there that when tapped it will send the user to the address to that marker location
+                      Text(" ").onTapGesture(perform: {
+                          let url = URL(string: "maps://?saddr=&daddr=\(blue.name)") // The issue now is that it does make the directions work but the location is not the same one, i.e.) Quincy brown line stop is instead read as Quincy, which is some other place.
+                          if UIApplication.shared.canOpenURL(url!) {
+                              UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+                          }})
+                      
+                  }
+              }
               
               
-              
+
               ForEach(monuments){ monument in
                   
                   //           this is for all of the monuments
@@ -264,26 +282,10 @@ struct number2: View {
                           //               this is where I am goign to have the text work as a navigation view to send the user to the screen that will have the name, photo and button that will send the user to apple maps where they can get the directions to that monument.
                           
                           
-//                          NavigationLink(destination: monument.name()){
-//                              Text(" ")
-//                          }
-                          
                       
                   }
               }
               
-              
-              
-              //these are the marks for the murals in Brown Line
-              //        Marker("Happen Space Gallary", systemImage: "building", coordinate: happen).tint(.black)
-              //        Marker("Berlin Wall", systemImage: "building", coordinate: berlin).tint(.black)
-              //        Marker("Dandelion Therapeutic Art Center", systemImage: "building", coordinate: dand).tint(.black)
-              //        Marker("Bojit Studdio", systemImage: "building", coordinate: bojit).tint(.black)
-              //        Marker("Urbs in Horto Mural", systemImage: "building", coordinate: urbs).tint(.black)
-              //        Marker("Malosa Gallery", systemImage: "building", coordinate: malosa).tint(.black)
-              //        Marker("Eagle Column", systemImage: "building", coordinate: eagle).tint(.black)
-              //        Marker("DePaul Art Museum", systemImage: "building", coordinate: dep).tint(.black)
-              //        Marker("Richard Norton Gallary", systemImage: "building", coordinate: rich).tint(.black)
           }// end of navigation view
     }
   }
