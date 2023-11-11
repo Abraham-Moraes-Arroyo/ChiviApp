@@ -6,27 +6,26 @@
 // This is the map screen
 import SwiftUI
 import MapKit
+
+// this is for the brown line stops
 struct markerData:Identifiable{
   var id: Int
   let name:String
   let coordinate:CLLocationCoordinate2D
-//  let colors:MKMarkerAnnotationView
-    
-    
-//     you are going to have to make another variable that is going to be for the image
-//    let images: Image
-    
-
-    
-    
 }
-//    what if I create a whole different funciton where I can plot markers too?
+//    This is for the markers
     struct monumentData: Identifiable{
         var id: Int
         let name: String
         let coordinate: CLLocationCoordinate2D
     }
 
+//this is for the blue line stops.
+struct blue: Identifiable{
+    var id: Int
+    let name: String
+    let coordinate: CLLocationCoordinate2D
+}
 
 
 struct number2: View {
@@ -89,6 +88,49 @@ struct number2: View {
   let AdamsWabash = CLLocationCoordinate2D(latitude: 41.879507, longitude: -87.626726)
   let MadisonWabash = CLLocationCoordinate2D(latitude: 41.882089, longitude: -87.626118)
   let RandolphWabash = CLLocationCoordinate2D(latitude: 41.884659, longitude: -87.625402)
+    
+    
+// These are are for the blue line stops
+    let Ohare = CLLocationCoordinate2D(latitude: 41.977665, longitude: -87.904223)
+    let Rosemont = CLLocationCoordinate2D(latitude: 41.983507, longitude: -87.859388)
+    let Cumberland = CLLocationCoordinate2D(latitude: 41.984246, longitude: -87.838028)
+    let HarlemOhare = CLLocationCoordinate2D(latitude: 41.98227, longitude: -87.808656)
+    let JeffersonPark = CLLocationCoordinate2D(latitude: 41.970634, longitude: -87.760892)
+    let MontroseBlue = CLLocationCoordinate2D(latitude: 41.960672, longitude: -87.743574)
+    let IrvingParkBlue = CLLocationCoordinate2D(latitude: 41.952925, longitude: -87.729229)
+    let AddisonBlue = CLLocationCoordinate2D(latitude: 41.94738, longitude: -87.71906)
+    let BelmontBlue = CLLocationCoordinate2D(latitude: 41.939751, longitude: -87.71906)
+    let LoganSquareBlue = CLLocationCoordinate2D(latitude: 41.929728, longitude: -87.708541)
+    let CaliforniaBlue = CLLocationCoordinate2D(latitude: 41.921939, longitude: -87.69689)
+    let WesternBlue = CLLocationCoordinate2D(latitude: 41.916157, longitude: -87.687364)
+    let DivisionBlue = CLLocationCoordinate2D(latitude: 41.903359, longitude: -87.666496)
+    let ChicagoBlue = CLLocationCoordinate2D(latitude: 41.903359, longitude: -87.655214)
+    let GrandBlue = CLLocationCoordinate2D(latitude: 41.891665, longitude: -87.647153)
+    let ClarkLakeBlue = CLLocationCoordinate2D(latitude: 41.885737, longitude: -87.630886)
+    let WashingtonBlue = CLLocationCoordinate2D(latitude: 41.883164, longitude: -87.626404)
+    let MonroeBlue = CLLocationCoordinate2D(latitude: 41.880703, longitude: -87.629179)
+    let JacksonBlue = CLLocationCoordinate2D(latitude: 41.878183, longitude: -87.629296)
+    let LaSalleBlue = CLLocationCoordinate2D(latitude: 41.87692, longitude: -87.631722)
+    let Clintonblue = CLLocationCoordinate2D(latitude: 41.875539, longitude: -87.641938)
+    let UIC = CLLocationCoordinate2D(latitude: 41.875474, longitude: -87.647115)
+    let Racine = CLLocationCoordinate2D(latitude: 41.87592, longitude: -87.657375)
+    let IllinoisMedDis = CLLocationCoordinate2D(latitude: 41.875706, longitude: -87.67314)
+    let WesternCongresBranch = CLLocationCoordinate2D(latitude: 41.87531, longitude: -87.686688)
+    let KedzieHomanBlue = CLLocationCoordinate2D(latitude: 41.874341, longitude: -87.70604)
+    let PulaskiBlue = CLLocationCoordinate2D(latitude: 41.873797, longitude: -87.725663)
+    let CiceroBlue = CLLocationCoordinate2D(latitude: 41.87197, longitude: -87.744698)
+    let AustinBlue = CLLocationCoordinate2D(latitude: 41.870851, longitude: -87.776812)
+    let OakParkBlue = CLLocationCoordinate2D(latitude: 41.872108, longitude: -87.794471)
+    let HarlemForestPark = CLLocationCoordinate2D(latitude: 41.87349, longitude: -87.793822)
+    let ForestPark = CLLocationCoordinate2D(latitude: 41.873958, longitude: -87.794223)
+
+
+
+
+
+
+    
+    
   var body: some View {
       NavigationView{
     var markers = [
@@ -134,22 +176,7 @@ struct number2: View {
       
       
           Map(position: $cameraPosition) {
-              //For Each Loop...
-              //2 plan:
-              //1 - load markers onto page
-              //2 - make
-              
-              //        This is the original code
-              
-              //      ForEach(markers){ marker in
-              //          Marker(marker.name, coordinate: marker.coordinate)
-              //               .tint(.brown)
-              //
-              //
-              //
-              //      }
-              
-              //        this is what Devin Implemented/ suggested
+     
               ForEach(markers){ marker in
                   
                   //            this is for all of the brown line train stops
@@ -187,20 +214,21 @@ struct number2: View {
                   //           this is for all of the monuments
                   Annotation(monument.name, coordinate: monument.coordinate, anchor: .topLeading){
                       
-                      Image(systemName: "figure.wave")
-                          .padding(6)
-                          .foregroundStyle(.white)
-                          .background(.black)
-                          .clipShape(.capsule)
-                          .onTapGesture {
-                              print("Test")
-                          }
-                      //               this is where I am goign to have the text work as a navigation view to send the user to the screen that will have the name, photo and button that will send the user to apple maps where they can get the directions to that monument.
-                      
-                      
-//                      NavigationLink(destination: monument.name()){
-                          Text(" ")
-//                      }
+                          Image(systemName: "figure.wave")
+                              .padding(6)
+                              .foregroundStyle(.white)
+                              .background(.black)
+                              .clipShape(.capsule)
+                              .onTapGesture {
+                                  print("Test")
+                              }
+                          //               this is where I am goign to have the text work as a navigation view to send the user to the screen that will have the name, photo and button that will send the user to apple maps where they can get the directions to that monument.
+                          
+                          
+//                          NavigationLink(destination: monument.name()){
+//                              Text(" ")
+//                          }
+                          
                       
                   }
               }
