@@ -217,7 +217,7 @@ struct number2: View {
           
 //          this is for the brown line trainstops
           
-    var markers = [
+          let markers = [
         markerData(id:0,name: "Kimball Brown Line" , coordinate: Kimball),
       markerData(id:1,name: "Kedzie Brown Line", coordinate: Kedzie),
       markerData(id:2,name:"Francisco Brown Line",coordinate: Francisco),
@@ -288,7 +288,7 @@ struct number2: View {
               
               ForEach(blues){ blue in
 
-                  //            this is for all of the brown line train stops
+                  //            this is for all of the blue line train stops
                   Annotation(blue.name, coordinate: blue.coordinate, anchor: .topLeading){
 
                       Image(systemName: "figure.wave")
@@ -308,28 +308,7 @@ struct number2: View {
                       
                   }
               }
-              ForEach(stops){ stop in
 
-                  //            this is for the monuments that the user can click and actually see
-                  Annotation(stop.name, coordinate: stop.coordinate, anchor: .topLeading){
-
-                      Image(systemName: "figure.wave")
-                          .padding(6)
-                          .foregroundStyle(.white)
-                          .background(.black)
-                          .clipShape(.capsule)
-                          .onTapGesture {
-                              print("Test")
-                          }
-                      //                this is where I am going to make the space act as a potential button when the user taps on it, it will make a screen pop up and have another button there that when tapped it will send the user to the address to that marker location
-                      Text(" ").onTapGesture(perform: {
-                          let url = URL(string: "maps://?saddr=&daddr=\(stop.name)") // The issue now is that it does make the directions work but the location is not the same one, i.e.) Quincy brown line stop is instead read as Quincy, which is some other place.
-                          if UIApplication.shared.canOpenURL(url!) {
-                              UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-                          }})
-                      
-                  }
-              }
               
               
 
@@ -352,6 +331,28 @@ struct number2: View {
                       
                   }
               }
+              
+              
+              ForEach(stops){ stop in
+                  
+                  //           this is for all of the monuments
+                  Annotation(stop.name, coordinate: stop.coordinate, anchor: .topLeading){
+                      
+                          Image(systemName: "figure.wave")
+                              .padding(6)
+                              .foregroundStyle(.white)
+                              .background(.black)
+                              .clipShape(.capsule)
+                              .onTapGesture {
+                                  print("Test")
+                              }
+                          //               this is where I am goign to have the text work as a navigation view to send the user to the screen that will have the name, photo and button that will send the user to apple maps where they can get the directions to that monument.
+                          
+                          
+                      
+                  }
+              }
+              
               
               
               
