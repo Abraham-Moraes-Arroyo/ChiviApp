@@ -27,6 +27,13 @@ struct blue: Identifiable{
     let coordinate: CLLocationCoordinate2D
 }
 
+//this is for the aftermath of the collected stops
+struct stop: Identifiable{
+    var id: Int
+    let name: String
+    let coordinate: CLLocationCoordinate2D
+}
+
 
 struct number2: View {
     
@@ -78,7 +85,7 @@ struct number2: View {
   let Fullerton = CLLocationCoordinate2D(latitude: 41.925645, longitude: -87.652345)
   let Armitage = CLLocationCoordinate2D(latitude: 41.918110, longitude: -87.652977)
   let Sedgwick = CLLocationCoordinate2D(latitude: 41.910481, longitude: -87.638840)
-    let Chicago = CLLocationCoordinate2D(latitude: 41.896546, longitude: -87.634198)
+  let Chicago = CLLocationCoordinate2D(latitude: 41.896546, longitude: -87.634198)
   let MerchandiseMart = CLLocationCoordinate2D(latitude: 41.888328, longitude: -87.635907)
   let ClarkLake = CLLocationCoordinate2D(latitude: 41.885737, longitude: -87.630824)
   let WashingtonWells = CLLocationCoordinate2D(latitude: 41.883765, longitude: -87.633979)
@@ -125,6 +132,32 @@ struct number2: View {
     let ForestPark = CLLocationCoordinate2D(latitude: 41.873958, longitude: -87.794223)
 
 
+// These are some of the monuments and paintings that the user can tap on and get directions to.
+    
+        let ChicagoriverWalk = CLLocationCoordinate2D(latitude: 41.887272, longitude: -87.627236)
+        let PoloniaTriangle = CLLocationCoordinate2D(latitude: 41.903559, longitude: -87.667170)
+        let IllinoisCentennialMon = CLLocationCoordinate2D(latitude: 41.928412, longitude: -87.707347)
+        let LoganTheatre  = CLLocationCoordinate2D(latitude: 41.929826, longitude: -87.708847)
+        let JeffersonThomasMemo = CLLocationCoordinate2D(latitude: 41.968397, longitude: -87.764121)
+        let Picaso = CLLocationCoordinate2D(latitude: 41.883396, longitude: -87.629883)
+        let EternalFlame = CLLocationCoordinate2D(latitude: 41.883955, longitude: -87.629853)
+        let PioneerCourt = CLLocationCoordinate2D(latitude: 41.889663, longitude: -87.623005)
+    
+    
+        let nicholasJ = CLLocationCoordinate2D(latitude: 41.889181, longitude: -87.618078)
+        let FountainGreat = CLLocationCoordinate2D(latitude: 41.881719, longitude: -87.623746)
+        let EagleFountain = CLLocationCoordinate2D(latitude: 41.876435, longitude: -87.623879)
+        let eiththstreet = CLLocationCoordinate2D(latitude: 41.87188, longitude: -87.62332)
+    
+    
+        let JosephFountain = CLLocationCoordinate2D(latitude: 41.86868, longitude: -87.62379)
+        let fisherboy = CLLocationCoordinate2D(latitude: 41.87712, longitude: -87.61928)
+    
+        let cranegirl = CLLocationCoordinate2D(latitude: 41.87713, longitude: -87.61867)
+    
+    
+    //    let HarlemForestPark = CLLocationCoordinate2D(latitude: 41.87349, longitude: -87.793822)
+    //    let HarlemForestPark = CLLocationCoordinate2D(latitude: 41.87349, longitude: -87.793822)
 
 
 
@@ -133,6 +166,18 @@ struct number2: View {
     
   var body: some View {
       NavigationView{
+          
+          var stops = [
+            markerData(id:0,name: "ChicagoriverWalk " , coordinate: ChicagoriverWalk),
+            markerData(id:1,name: "Polonia Triangle" , coordinate: PoloniaTriangle),
+            markerData(id:2, name: "Illinois Centennial Monnument", coordinate: IllinoisCentennialMon),
+            markerData(id:3, name: "Logan Theather ", coordinate: LoganTheatre),
+            markerData(id:4, name: "Picaso", coordinate: Picaso)
+
+
+            
+          ]
+          
           
 //          this is for the blue line trainstops
           var blues = [
@@ -263,6 +308,28 @@ struct number2: View {
                       
                   }
               }
+              ForEach(stops){ stop in
+
+                  //            this is for the monuments that the user can click and actually see
+                  Annotation(stop.name, coordinate: stop.coordinate, anchor: .topLeading){
+
+                      Image(systemName: "figure.wave")
+                          .padding(6)
+                          .foregroundStyle(.white)
+                          .background(.black)
+                          .clipShape(.capsule)
+                          .onTapGesture {
+                              print("Test")
+                          }
+                      //                this is where I am going to make the space act as a potential button when the user taps on it, it will make a screen pop up and have another button there that when tapped it will send the user to the address to that marker location
+                      Text(" ").onTapGesture(perform: {
+                          let url = URL(string: "maps://?saddr=&daddr=\(stop.name)") // The issue now is that it does make the directions work but the location is not the same one, i.e.) Quincy brown line stop is instead read as Quincy, which is some other place.
+                          if UIApplication.shared.canOpenURL(url!) {
+                              UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+                          }})
+                      
+                  }
+              }
               
               
 
@@ -285,6 +352,8 @@ struct number2: View {
                       
                   }
               }
+              
+              
               
           }// end of navigation view
     }

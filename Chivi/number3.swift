@@ -24,7 +24,7 @@ struct number3: View {
 //                viewModel.checkIfLocationServicesIsEnabled()
 //            }
         Text("screen 2")
-    }
+    }// end of body
 }
 
 #Preview {
