@@ -17,13 +17,25 @@ struct number3: View {
     
     
     var body: some View {
-//        Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
-//            .ignoresSafeArea()
-//            .accentColor(Color(.systemPink))
-//            .onAppear{
-//                viewModel.checkIfLocationServicesIsEnabled()
-//            }
-        Text("screen 2")
+        NavigationView{
+            //        Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
+            //            .ignoresSafeArea()
+            //            .accentColor(Color(.systemPink))
+            //            .onAppear{
+            //                viewModel.checkIfLocationServicesIsEnabled()
+            //            }
+            VStack{
+                Text("screen 3")
+                HStack{
+                    NavigationLink(destination: chinatown()) {
+                        Text("ChinaTown RedLine")
+                        
+                    }
+                    
+                    
+                }
+            }
+        }
     }// end of body
 }
 
