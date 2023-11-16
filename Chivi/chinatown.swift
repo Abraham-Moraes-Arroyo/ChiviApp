@@ -6,13 +6,36 @@
 //
 
 import SwiftUI
+import Foundation
+
+//struct chinatowns:  Codable {
+//    
+//    var isFavorite: Bool
+//}
+
+//struct chinatowns:  Codable {
+//    
+//    @State var isFavorite: Bool
+//    
+//    
+//}
 
 struct chinatown: View {
     var body: some View {
+        
+        
+        
+        
+        
         VStack{
             Text("In this route you will see")
             List{
                 HStack{
+                   
+//                    if chinatowns.isFavorite{
+//                        print("egg")
+//                    }
+//                    
                     Image("chinatownmid")
                         .resizable()
                         .frame(width: 50, height: 50)
@@ -29,6 +52,7 @@ struct chinatown: View {
                             UIApplication.shared.open(url!, options: [:], completionHandler: nil)
                         }
                     }).foregroundColor(.green)
+                    
                     //this is the end of the button
                 }// end of chinatown Gate
                 
