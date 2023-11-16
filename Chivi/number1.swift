@@ -10,73 +10,81 @@ import SwiftUI
 struct number1: View {
     var body: some View {
         NavigationView{
-            VStack{
+            VStack(alignment: .leading){
                 //            this is the title
-                HStack{
-                    Text("Chivi")
-                }/*.offset(y: -350.0)*/
-                .font(.system(size: 40))
-                .foregroundColor(.purple)
-                //        Here is where we are going to have the buttons to the different routes that the user can take
-                //        This is for the red line line of Mulrals
-                HStack{
-                    Button("Red Line Mile of Murals", action:{
-                        let latitude = 42.011610
-                        let longitude = -87.665890
-                        let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
-                        if UIApplication.shared.canOpenURL(url!) {
-                            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-                        }
-                    }).foregroundColor(.red)
-                    
+                
                     HStack{
-                        NavigationLink(destination: redlineMile()) {
-                            Text("Learn More")
+                        Image("chivi")
+                            .resizable()
+                            .scaledToFit()
+                        
+                    }.offset(y: -30)
+                    
+                    
+                    
+                    
+                    Divider()
+                    Image("chinatownmid")
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(Circle())
+                        .overlay {
+                            Circle().stroke(.white, lineWidth: 4)
+                        }
+                        .shadow(radius: 9)
+                        .offset(y: -200)
+                        .padding(.bottom, -130)
+                        .frame(height:300)
+                    
+                    Text("Welcome Back!  Abraham")
+                        .font(.title)
+                        .offset(y:-160)
+                        .offset(x:20)
+                    
+                    
+                    Text("Continue where you left off")
+                        .offset(y:-160)
+                        .offset(x:30)
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                    HStack{
+                        List{
+                            HStack{
+                                Image("chinatownmid")
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                                NavigationLink(destination: chinatown()) {
+                                    Text("ChinaTown RedLine")
+                                    
+                                    
+                                }
+                            }// end of chinatown
                         }
                     }
+                    .offset(y: -160)
                     
-                    
-                    
-                }
-                // this is for the brown line
-                HStack{
-                    Button("Brown Line Berlin Wall ", action:{
-                        let latitude = 41.970710
-                        let longitude = -87.699330
-                        let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
-                        if UIApplication.shared.canOpenURL(url!) {
-                            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-                        }
-                    }).foregroundColor(.brown)
-                    
-                    HStack{
-                        NavigationLink(destination: redlineMile()) {
-                            Text("Learn More")
-                        }
+                    Text("Favorites")
+                        .offset(y:-160)
+                        .offset(x:30)
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                    VStack{
+                        List{
+                            HStack{
+                                Image("chinatownmid")
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                                NavigationLink(destination: chinatown()) {
+                                    Text("ChinaTown RedLine")
+                                    
+                                    
+                                }
+                            }// end of chinatown
+                        
                     }
-                    
-                    
-                    
                 }
-                HStack{
-                    Button("Blue Line Picaso", action:{
-                        let latitude = 41.883210
-                        let longitude = -87.633870
-                        let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
-                        if UIApplication.shared.canOpenURL(url!) {
-                            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-                        }
-                    }).foregroundColor(.blue)
-                    
-                    HStack{
-                        NavigationLink(destination: bluelinepicaso()) {
-                            Text("Learn More")
-                        }
-                    }
-                    
-                    
-                    
-                }
+                .offset(y: -160)
+               
                 
             }// end of Vstack
         } // end of navigation View
