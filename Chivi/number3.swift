@@ -16,6 +16,17 @@ struct number3: View {
 //    
     
     
+// HStack {
+//    landmark.image
+//        .resizable()
+//        .frame(width: 50, height: 50)
+//    Text(landmark.name)
+//
+//
+//    Spacer()
+//}
+    
+    
     var body: some View {
         NavigationView{
             //        Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
@@ -25,14 +36,49 @@ struct number3: View {
             //                viewModel.checkIfLocationServicesIsEnabled()
             //            }
             VStack{
-                Text("screen 3")
-                HStack{
-                    NavigationLink(destination: chinatown()) {
-                        Text("ChinaTown RedLine")
-                        
-                    }
-                    
-                    
+                Text("Tour De Chicago")
+                List{
+                    HStack{
+                        Image("chinatownmid")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                        NavigationLink(destination: chinatown()) {
+                            Text("ChinaTown RedLine")
+                            
+                            
+                        }
+                    }// end of chinatown
+                    HStack{
+                        Image("berlin")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                        NavigationLink(destination: chinatown()) {
+                            Text("BerlinWall BrownLine")
+                            
+                            
+                        }
+                    }// end of berlinwall
+                    HStack{
+                        Image("picaso")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                        NavigationLink(destination: chinatown()) {
+                            Text("Mythical Monument BlueLine")
+                            
+                            
+                        }
+                    }// end of blueline
+                    HStack{
+                        Image("polishtriangle")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                        NavigationLink(destination: chinatown()) {
+                            Text("Fontaine BlueLine")
+                            
+                            
+                        }
+                    }// end of chinatown
+
                 }
             }
         }
