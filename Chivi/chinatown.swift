@@ -8,19 +8,18 @@
 import SwiftUI
 import Foundation
 
-//struct chinatowns:  Codable {
-//    
-//    var isFavorite: Bool
-//}
+struct Chinatowns {
+    @State var isFavorite: Bool
+}
 
-//struct chinatowns:  Codable {
-//    
-//    @State var isFavorite: Bool
-//    
-//    
-//}
+
 
 struct chinatown: View {
+    
+    //Here is where I am going to have the favorite variable where we will then recall the favorites in a different screen
+
+    let coolRestaurant:Chinatowns = Chinatowns(isFavorite:true)
+    
     var body: some View {
         
         
@@ -31,11 +30,12 @@ struct chinatown: View {
             Text("In this route you will see")
             List{
                 HStack{
+                    if (coolRestaurant.isFavorite){
+                        Image(systemName: "star.fill")
+                            .foregroundStyle(.yellow)
+                    }
                    
-//                    if chinatowns.isFavorite{
-//                        print("egg")
-//                    }
-//                    
+
                     Image("chinatownmid")
                         .resizable()
                         .frame(width: 50, height: 50)
