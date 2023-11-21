@@ -28,6 +28,7 @@ struct chinatown: View {
         
         VStack{
             Text("In this route you will see")
+                .fontWeight(.heavy)
             List{
                 HStack{
                     if (coolRestaurant.isFavorite){
@@ -43,15 +44,16 @@ struct chinatown: View {
                         Text("Chinatown Gate")
                         
                     }
-                    
-                    Button("Go", action:{
-                        let latitude = 41.852610
-                        let longitude = -87.632170
-                        let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
-                        if UIApplication.shared.canOpenURL(url!) {
-                            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-                        }
-                    }).foregroundColor(.green)
+                    HStack{
+                        Button("Go", action:{
+                            let latitude = 41.852610
+                            let longitude = -87.632170
+                            let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
+                            if UIApplication.shared.canOpenURL(url!) {
+                                UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+                            }
+                        }).foregroundColor(.green)
+                    }
                     
                     //this is the end of the button
                 }// end of chinatown Gate
@@ -65,6 +67,7 @@ struct chinatown: View {
                         Text("Nine Dragons wall")
                         
                     }
+                    HStack{
                     Button("Go", action:{
                         let latitude = 41.853067
                         let longitude = -87.631430
@@ -74,6 +77,7 @@ struct chinatown: View {
                         }
                     }).foregroundColor(.green)
                     //this is the end of the button
+                }
                 }// end of chinatown Gate
                 
                 
@@ -86,15 +90,17 @@ struct chinatown: View {
                         Text("Chinatown Square Zodiacs")
                         
                     }
-                    Button("Go", action:{
-                        let latitude = 41.853067
-                        let longitude = -87.631430
-                        let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
-                        if UIApplication.shared.canOpenURL(url!) {
-                            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-                        }
-                    }).foregroundColor(.green)
-                    //this is the end of the button
+                    HStack{
+                        Button("Go", action:{
+                            let latitude = 41.853067
+                            let longitude = -87.631430
+                            let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
+                            if UIApplication.shared.canOpenURL(url!) {
+                                UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+                            }
+                        }).foregroundColor(.green)
+                        //this is the end of the button
+                    }
                 }// end of chinatown Gate
                 
                 
@@ -107,15 +113,17 @@ struct chinatown: View {
                         Text("You Are Beatiful Plaza")
                         
                     }
-                    Button("Go", action:{
-                        let latitude = 41.853067
-                        let longitude = -87.631430
-                        let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
-                        if UIApplication.shared.canOpenURL(url!) {
-                            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-                        }
-                    }).foregroundColor(.green)
-                    //this is the end of the button
+                    HStack{
+                        Button("Go", action:{
+                            let latitude = 41.853067
+                            let longitude = -87.631430
+                            let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
+                            if UIApplication.shared.canOpenURL(url!) {
+                                UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+                            }
+                        }).foregroundColor(.green)
+                        //this is the end of the button
+                    }
                 }// end of chinatown Gate
                 
                 
@@ -128,15 +136,17 @@ struct chinatown: View {
                         Text("Chinese American Museum of Chicago")
                         
                     }
-                    Button("Go", action:{
-                        let latitude = 41.853067
-                        let longitude = -87.631430
-                        let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
-                        if UIApplication.shared.canOpenURL(url!) {
-                            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-                        }
-                    }).foregroundColor(.green)
-                    //this is the end of the button
+                    HStack{
+                        Button("Go", action:{
+                            let latitude = 41.853067
+                            let longitude = -87.631430
+                            let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
+                            if UIApplication.shared.canOpenURL(url!) {
+                                UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+                            }
+                        }).foregroundColor(.green)
+                        //this is the end of the button
+                    }
                 }// end of chinatown Gate
                 
                 

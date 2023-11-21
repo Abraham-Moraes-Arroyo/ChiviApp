@@ -8,36 +8,24 @@
 import SwiftUI
 import MapKit
 
+struct tours {
+    @State var isFavorite: Bool
+}
+
+
 struct number3: View {
-//    @StateObject private var viewModel = ContentViewModel()
-    
-//    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 41.88, longitude: -87.63), span:MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
-//    
-//    
-    
-    
-// HStack {
-//    landmark.image
-//        .resizable()
-//        .frame(width: 50, height: 50)
-//    Text(landmark.name)
-//
-//
-//    Spacer()
-//}
-    
+
+    let cooltour:tours = tours(isFavorite:true)
+
     
     var body: some View {
         NavigationView{
-            //        Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
-            //            .ignoresSafeArea()
-            //            .accentColor(Color(.systemPink))
-            //            .onAppear{
-            //                viewModel.checkIfLocationServicesIsEnabled()
-            //            }
+  
             VStack{
                 Text("Tour De Chicago")
+                
                 List{
+
                     HStack{
                         Image("chinatownmid")
                             .resizable()
@@ -46,6 +34,11 @@ struct number3: View {
                             Text("ChinaTown RedLine")
                             
                             
+                            if (cooltour.isFavorite){
+                                Image(systemName: "star.fill")
+                                    .foregroundStyle(.yellow)
+                            }
+
                         }
                     }// end of chinatown
                     HStack{
