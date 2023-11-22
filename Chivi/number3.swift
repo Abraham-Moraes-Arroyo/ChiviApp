@@ -41,6 +41,8 @@ struct number3: View {
 
                         }
                     }// end of chinatown
+                    
+                    
                     HStack{
                         Image("berlin")
                             .resizable()
@@ -61,6 +63,8 @@ struct number3: View {
                             
                         }
                     }// end of blueline
+                    
+                    
                     HStack{
                         Image("polishtriangle")
                             .resizable()
