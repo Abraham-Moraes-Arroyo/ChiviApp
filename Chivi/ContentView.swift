@@ -6,29 +6,29 @@
 //
 
 import SwiftUI
-
+// This is rogelio
 struct ContentView: View {
     var body: some View {
         TabView{
             number1()
                 .tabItem {
                     Image(systemName: "leaf.fill")
-                    Text("Events")
+                    Text("Home")
                 }
             number2()
                 .tabItem {
-                    Image(systemName: "snowflake")
+                    Image(systemName: "map")
                     Text("Map")
                 }
             number3()
                  .tabItem {
-                     Image(systemName: "sun.max")
-                     Text("Warm")
+                     Image(systemName: "mappin.circle.fill")
+                     Text("Tours")
                  }
             Number4()
                  .tabItem {
-                     Image(systemName: "sun.max")
-                     Text("Museums")
+                     Image(systemName: "star")
+                     Text("Favorites")
                  }
         }
     }
