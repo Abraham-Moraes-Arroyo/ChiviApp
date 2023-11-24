@@ -44,16 +44,7 @@ struct chinatown: View {
                         Text("Chinatown Gate")
                         
                     }
-                    HStack{
-                        Button("Go", action:{
-                            let latitude = 41.852610
-                            let longitude = -87.632170
-                            let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
-                            if UIApplication.shared.canOpenURL(url!) {
-                                UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-                            }
-                        }).foregroundColor(.green)
-                    }
+               
                     
                     //this is the end of the button
                 }// end of chinatown Gate
@@ -67,17 +58,7 @@ struct chinatown: View {
                         Text("Nine Dragons wall")
                         
                     }
-                    HStack{
-                    Button("Go", action:{
-                        let latitude = 41.853067
-                        let longitude = -87.631430
-                        let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
-                        if UIApplication.shared.canOpenURL(url!) {
-                            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-                        }
-                    }).foregroundColor(.green)
-                    //this is the end of the button
-                }
+                
                 }// end of chinatown Gate
                 
                 
@@ -86,21 +67,11 @@ struct chinatown: View {
                     Image("chinazodiac")
                         .resizable()
                         .frame(width: 50, height: 50)
-                    NavigationLink(destination: Ninedragons()) {
+                    NavigationLink(destination: squarezodiacs()) {
                         Text("Chinatown Square Zodiacs")
                         
                     }
-                    HStack{
-                        Button("Go", action:{
-                            let latitude = 41.853067
-                            let longitude = -87.631430
-                            let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
-                            if UIApplication.shared.canOpenURL(url!) {
-                                UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-                            }
-                        }).foregroundColor(.green)
-                        //this is the end of the button
-                    }
+                 
                 }// end of chinatown Gate
                 
                 
@@ -109,21 +80,11 @@ struct chinatown: View {
                     Image("beapla")
                         .resizable()
                         .frame(width: 50, height: 50)
-                    NavigationLink(destination: Ninedragons()) {
+                    NavigationLink(destination: uareb()) {
                         Text("You Are Beatiful Plaza")
                         
                     }
-                    HStack{
-                        Button("Go", action:{
-                            let latitude = 41.853067
-                            let longitude = -87.631430
-                            let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
-                            if UIApplication.shared.canOpenURL(url!) {
-                                UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-                            }
-                        }).foregroundColor(.green)
-                        //this is the end of the button
-                    }
+                  
                 }// end of chinatown Gate
                 
                 
@@ -132,21 +93,11 @@ struct chinatown: View {
                     Image("chinamu")
                         .resizable()
                         .frame(width: 50, height: 50)
-                    NavigationLink(destination: Ninedragons()) {
+                    NavigationLink(destination: chinesemuseum()) {
                         Text("Chinese American Museum of Chicago")
                         
                     }
-                    HStack{
-                        Button("Go", action:{
-                            let latitude = 41.853067
-                            let longitude = -87.631430
-                            let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
-                            if UIApplication.shared.canOpenURL(url!) {
-                                UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-                            }
-                        }).foregroundColor(.green)
-                        //this is the end of the button
-                    }
+                   
                 }// end of chinatown Gate
                 
                 

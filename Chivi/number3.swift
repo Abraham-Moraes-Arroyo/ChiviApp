@@ -47,9 +47,9 @@ struct number3: View {
                         Image("berlin")
                             .resizable()
                             .frame(width: 50, height: 50)
-                        NavigationLink(destination: chinatown()) {
+                        NavigationLink(destination: berlinW()) {
                             Text("BerlinWall BrownLine")
-                            
+//                          41.884737, -87.631194
                             
                         }
                     }// end of berlinwall
@@ -63,6 +63,10 @@ struct number3: View {
                             
                         }
                     }// end of blueline
+                    
+                    
+//                    agora
+//                    41.868123, -87.623380
                     
                     
                     HStack{
