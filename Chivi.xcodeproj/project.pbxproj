@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		85127EF22B05864F00B85166 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85127EF12B05864F00B85166 /* SwiftUIView.swift */; };
 		85127EF42B05865B00B85166 /* chinatown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85127EF32B05865B00B85166 /* chinatown.swift */; };
 		85127EF62B05894500B85166 /* ChinatownGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85127EF52B05894500B85166 /* ChinatownGate.swift */; };
 		85127EF82B05895A00B85166 /* Ninedragons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85127EF72B05895A00B85166 /* Ninedragons.swift */; };
@@ -33,10 +32,6 @@
 		85DBDE9D2AE42E4F00DB5763 /* number2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDE9C2AE42E4F00DB5763 /* number2.swift */; };
 		85DBDE9F2AE42E5700DB5763 /* number3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDE9E2AE42E5700DB5763 /* number3.swift */; };
 		85DBDEA12AE42E6A00DB5763 /* Number4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDEA02AE42E6A00DB5763 /* Number4.swift */; };
-		85E6D4F42AF55A5C00AAA28F /* redlineMile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E6D4F32AF55A5C00AAA28F /* redlineMile.swift */; };
-		85E6D4F62AF55EAF00AAA28F /* berlinwall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E6D4F52AF55EAF00AAA28F /* berlinwall.swift */; };
-		85E6D4F82AF560BA00AAA28F /* bluelinepicaso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E6D4F72AF560BA00AAA28F /* bluelinepicaso.swift */; };
-		85E940B92AF48D2400FB50BA /* Combo2and3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E940B82AF48D2300FB50BA /* Combo2and3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +52,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		85127EF12B05864F00B85166 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		85127EF32B05865B00B85166 /* chinatown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chinatown.swift; sourceTree = "<group>"; };
 		85127EF52B05894500B85166 /* ChinatownGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChinatownGate.swift; sourceTree = "<group>"; };
 		85127EF72B05895A00B85166 /* Ninedragons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ninedragons.swift; sourceTree = "<group>"; };
@@ -86,10 +80,6 @@
 		85DBDE9C2AE42E4F00DB5763 /* number2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = number2.swift; sourceTree = "<group>"; };
 		85DBDE9E2AE42E5700DB5763 /* number3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = number3.swift; sourceTree = "<group>"; };
 		85DBDEA02AE42E6A00DB5763 /* Number4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number4.swift; sourceTree = "<group>"; };
-		85E6D4F32AF55A5C00AAA28F /* redlineMile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redlineMile.swift; sourceTree = "<group>"; };
-		85E6D4F52AF55EAF00AAA28F /* berlinwall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = berlinwall.swift; sourceTree = "<group>"; };
-		85E6D4F72AF560BA00AAA28F /* bluelinepicaso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bluelinepicaso.swift; sourceTree = "<group>"; };
-		85E940B82AF48D2300FB50BA /* Combo2and3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combo2and3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +107,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		858779332B110BD1002D6CCC /* individuallocations */ = {
+			isa = PBXGroup;
+			children = (
+				8587792F2B10F8AA002D6CCC /* picaso.swift */,
+				8587792B2B10F58E002D6CCC /* standingb.swift */,
+				8587792D2B10F75B002D6CCC /* eternalf.swift */,
+				858779272B10EF5F002D6CCC /* chinesemuseum.swift */,
+				858779212B10E805002D6CCC /* berlinWin.swift */,
+				858779232B10EAC7002D6CCC /* squarezodiacs.swift */,
+				858779252B10ED2B002D6CCC /* uareb.swift */,
+				85127EF72B05895A00B85166 /* Ninedragons.swift */,
+				85127EF52B05894500B85166 /* ChinatownGate.swift */,
+				858779312B11032F002D6CCC /* calderf.swift */,
+			);
+			path = individuallocations;
+			sourceTree = "<group>";
+		};
+		858779342B110CE6002D6CCC /* menus */ = {
+			isa = PBXGroup;
+			children = (
+				858779292B10F355002D6CCC /* mythicalblueline.swift */,
+				85127EF32B05865B00B85166 /* chinatown.swift */,
+				8587791F2B10E6EB002D6CCC /* berlinW.swift */,
+			);
+			path = menus;
+			sourceTree = "<group>";
+		};
 		85DBDE642AE42E3600DB5763 = {
 			isa = PBXGroup;
 			children = (
@@ -141,30 +158,14 @@
 		85DBDE6F2AE42E3600DB5763 /* Chivi */ = {
 			isa = PBXGroup;
 			children = (
-				858779312B11032F002D6CCC /* calderf.swift */,
-				8587792B2B10F58E002D6CCC /* standingb.swift */,
-				8587792F2B10F8AA002D6CCC /* picaso.swift */,
 				85DBDE702AE42E3600DB5763 /* ChiviApp.swift */,
-				85E6D4F32AF55A5C00AAA28F /* redlineMile.swift */,
 				85DBDE722AE42E3600DB5763 /* ContentView.swift */,
 				85DBDE9A2AE42E4900DB5763 /* number1.swift */,
-				85E6D4F72AF560BA00AAA28F /* bluelinepicaso.swift */,
-				85E6D4F52AF55EAF00AAA28F /* berlinwall.swift */,
 				85DBDE9C2AE42E4F00DB5763 /* number2.swift */,
-				85E940B82AF48D2300FB50BA /* Combo2and3.swift */,
 				85DBDE9E2AE42E5700DB5763 /* number3.swift */,
-				858779292B10F355002D6CCC /* mythicalblueline.swift */,
-				8587792D2B10F75B002D6CCC /* eternalf.swift */,
-				85127EF32B05865B00B85166 /* chinatown.swift */,
-				858779232B10EAC7002D6CCC /* squarezodiacs.swift */,
-				858779252B10ED2B002D6CCC /* uareb.swift */,
-				858779272B10EF5F002D6CCC /* chinesemuseum.swift */,
-				8587791F2B10E6EB002D6CCC /* berlinW.swift */,
-				85127EF72B05895A00B85166 /* Ninedragons.swift */,
-				85127EF52B05894500B85166 /* ChinatownGate.swift */,
-				858779212B10E805002D6CCC /* berlinWin.swift */,
-				85127EF12B05864F00B85166 /* SwiftUIView.swift */,
 				85DBDEA02AE42E6A00DB5763 /* Number4.swift */,
+				858779332B110BD1002D6CCC /* individuallocations */,
+				858779342B110CE6002D6CCC /* menus */,
 				85DBDE742AE42E3800DB5763 /* Assets.xcassets */,
 				85DBDE762AE42E3800DB5763 /* Preview Content */,
 			);
@@ -328,8 +329,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				85DBDE9B2AE42E4900DB5763 /* number1.swift in Sources */,
-				85E6D4F62AF55EAF00AAA28F /* berlinwall.swift in Sources */,
-				85127EF22B05864F00B85166 /* SwiftUIView.swift in Sources */,
 				8587792C2B10F58E002D6CCC /* standingb.swift in Sources */,
 				85DBDE732AE42E3600DB5763 /* ContentView.swift in Sources */,
 				858779282B10EF5F002D6CCC /* chinesemuseum.swift in Sources */,
@@ -342,14 +341,11 @@
 				85DBDE9D2AE42E4F00DB5763 /* number2.swift in Sources */,
 				858779242B10EAC7002D6CCC /* squarezodiacs.swift in Sources */,
 				858779262B10ED2B002D6CCC /* uareb.swift in Sources */,
-				85E6D4F82AF560BA00AAA28F /* bluelinepicaso.swift in Sources */,
 				85DBDEA12AE42E6A00DB5763 /* Number4.swift in Sources */,
 				85127EF62B05894500B85166 /* ChinatownGate.swift in Sources */,
 				85127EF82B05895A00B85166 /* Ninedragons.swift in Sources */,
 				85127EF42B05865B00B85166 /* chinatown.swift in Sources */,
 				8587792A2B10F355002D6CCC /* mythicalblueline.swift in Sources */,
-				85E6D4F42AF55A5C00AAA28F /* redlineMile.swift in Sources */,
-				85E940B92AF48D2400FB50BA /* Combo2and3.swift in Sources */,
 				858779202B10E6EB002D6CCC /* berlinW.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
