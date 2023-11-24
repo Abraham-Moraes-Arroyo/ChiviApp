@@ -57,7 +57,7 @@ struct number3: View {
                         Image("picaso")
                             .resizable()
                             .frame(width: 50, height: 50)
-                        NavigationLink(destination: chinatown()) {
+                        NavigationLink(destination: mythicalblueline()) {
                             Text("Mythical Monument BlueLine")
                             
                             

@@ -25,7 +25,7 @@ struct mythicalblueline: View {
                     Image("picaso")
                         .resizable()
                         .frame(width: 50, height: 50)
-                    NavigationLink(destination: ChinatownGate()) {
+                    NavigationLink(destination: picaso()) {
                         Text("The Picaso")
                         
                     }
@@ -36,10 +36,10 @@ struct mythicalblueline: View {
                 
                 
                 HStack{
-                    Image("ninedragonmid")
+                    Image("eternalFlame")
                         .resizable()
                         .frame(width: 50, height: 50)
-                    NavigationLink(destination: Ninedragons()) {
+                    NavigationLink(destination: eternalf()) {
                         Text("Eternal Flame")
                         
                     }
@@ -49,10 +49,10 @@ struct mythicalblueline: View {
                 
                 
                 HStack{
-                    Image("chinazodiac")
+                    Image("standingb")
                         .resizable()
                         .frame(width: 50, height: 50)
-                    NavigationLink(destination: squarezodiacs()) {
+                    NavigationLink(destination: standingb()) {
                         Text("Monument With Standing Beast")
                         
                     }
