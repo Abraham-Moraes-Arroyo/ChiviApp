@@ -58,6 +58,17 @@ struct mythicalblueline: View {
                     }
                  
                 }// end of chinatown Gate
+                HStack{
+                    Image("standingb")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                    NavigationLink(destination: standingb()) {
+                        Text("Calders Flamingo")
+                        
+                    }
+                 
+                }// end of chinatown Gate
+                
                 
                 
                 
