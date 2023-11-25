@@ -167,8 +167,8 @@
 			children = (
 				858779292B10F355002D6CCC /* mythicalblueline.swift */,
 				85127EF32B05865B00B85166 /* chinatown.swift */,
-				858779352B124902002D6CCC /* fontaineBlueLine.swift */,
 				8587791F2B10E6EB002D6CCC /* berlinW.swift */,
+				858779352B124902002D6CCC /* fontaineBlueLine.swift */,
 			);
 			path = menus;
 			sourceTree = "<group>";

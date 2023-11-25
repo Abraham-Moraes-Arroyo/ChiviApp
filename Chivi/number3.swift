@@ -32,17 +32,12 @@ struct number3: View {
                             .frame(width: 50, height: 50)
                         NavigationLink(destination: chinatown()) {
                             Text("ChinaTown RedLine")
-                            
-                            
                             if (cooltour.isFavorite){
                                 Image(systemName: "star.fill")
                                     .foregroundStyle(.yellow)
                             }
-
                         }
                     }// end of chinatown
-                    
-                    
                     HStack{
                         Image("berlin")
                             .resizable()
@@ -63,25 +58,31 @@ struct number3: View {
                             
                         }
                     }// end of blueline
-                    
-                    
 //                    agora
 //                    41.868123, -87.623380
-                    
-                    
-                    HStack{
-                        Image("polishtriangle")
-                            .resizable()
-                            .frame(width: 50, height: 50)
-                        NavigationLink(destination: chinatown()) {
-                            Text("Fontaine BlueLine")
-                            
-                            
-                        }
-                    }// end of chinatown
+              
 
+                } // end of List
+                VStack{
+                    Text("More Extensive")
+                    List{
+                        HStack{
+                            Image("polishtriangle")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                            NavigationLink(destination: fontaineBlueLine()) {
+                                Text("Fontaine BlueLine")
+                            }
+                        }// end of chinatown
+                        
+                        
+                        
+                    }
                 }
-            }
+                
+            }// end of Vstack
+            
+       
         }
     }// end of body
 }
