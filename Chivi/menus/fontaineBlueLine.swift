@@ -57,8 +57,81 @@ struct fontaineBlueLine: View {
                         
                     }
                 }
+                HStack{
+                    Image("eaglef")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                    NavigationLink(destination: eaglefountain()) {
+                        Text("Eagle Fountains")
+                        
+                    }
+                }
+                HStack{
+                    Image("eightstreet")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                    NavigationLink(destination: eightstreet()) {
+                        Text("8th Street Fountian")
+                        
+                    }
+                }
+                HStack{
+                    Image("josephf")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                    NavigationLink(destination: josephf()) {
+                        Text("Joseph Rosenberg Fountain")
+                        
+                    }
+                }
                 
-                
+                HStack{
+                    Image("fisherb")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                    NavigationLink(destination: fisherb()) {
+                        Text("Fisher Boy")
+                        
+                    }
+                }
+                HStack{
+                    Image("craneg")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                    NavigationLink(destination: craneg()) {
+                        Text("Crane Girl")
+                        
+                    }
+                }
+                HStack{
+                    Image("claranceb")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                    NavigationLink(destination: claranceb()) {
+                        Text("Clarance F Buckingham Fountain")
+                        
+                    }
+                }
+                HStack{
+                    Image("doveg")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                    NavigationLink(destination: doveg()) {
+                        Text("Dove Girl")
+                        
+                    }
+                }
+                HStack{
+                    Image("turtleb")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                    NavigationLink(destination: turtleb()) {
+                        Text("Turtle Boy")
+                        
+                    }
+                }
+
+
             }// this is the end of list
         }
     }
