@@ -14,6 +14,7 @@
 		854596D72B125ADE006DCF8F /* eightstreet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854596D62B125ADE006DCF8F /* eightstreet.swift */; };
 		854596D92B125CC3006DCF8F /* josephf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854596D82B125CC3006DCF8F /* josephf.swift */; };
 		854596DB2B125E57006DCF8F /* fisherb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854596DA2B125E57006DCF8F /* fisherb.swift */; };
+		854596DD2B125F83006DCF8F /* craneg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854596DC2B125F83006DCF8F /* craneg.swift */; };
 		858779202B10E6EB002D6CCC /* berlinW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8587791F2B10E6EB002D6CCC /* berlinW.swift */; };
 		858779222B10E805002D6CCC /* berlinWin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858779212B10E805002D6CCC /* berlinWin.swift */; };
 		858779242B10EAC7002D6CCC /* squarezodiacs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858779232B10EAC7002D6CCC /* squarezodiacs.swift */; };
@@ -68,6 +69,7 @@
 		854596D62B125ADE006DCF8F /* eightstreet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eightstreet.swift; sourceTree = "<group>"; };
 		854596D82B125CC3006DCF8F /* josephf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = josephf.swift; sourceTree = "<group>"; };
 		854596DA2B125E57006DCF8F /* fisherb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fisherb.swift; sourceTree = "<group>"; };
+		854596DC2B125F83006DCF8F /* craneg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = craneg.swift; sourceTree = "<group>"; };
 		8587791F2B10E6EB002D6CCC /* berlinW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = berlinW.swift; sourceTree = "<group>"; };
 		858779212B10E805002D6CCC /* berlinWin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = berlinWin.swift; sourceTree = "<group>"; };
 		858779232B10EAC7002D6CCC /* squarezodiacs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = squarezodiacs.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				854596D62B125ADE006DCF8F /* eightstreet.swift */,
 				854596D82B125CC3006DCF8F /* josephf.swift */,
 				854596DA2B125E57006DCF8F /* fisherb.swift */,
+				854596DC2B125F83006DCF8F /* craneg.swift */,
 				858779232B10EAC7002D6CCC /* squarezodiacs.swift */,
 				858779252B10ED2B002D6CCC /* uareb.swift */,
 				85127EF72B05895A00B85166 /* Ninedragons.swift */,
@@ -362,6 +365,7 @@
 				8587792E2B10F75B002D6CCC /* eternalf.swift in Sources */,
 				8587793A2B124BAD002D6CCC /* nicholasjfountain.swift in Sources */,
 				858779402B1252FD002D6CCC /* eaglefountain.swift in Sources */,
+				854596DD2B125F83006DCF8F /* craneg.swift in Sources */,
 				858779222B10E805002D6CCC /* berlinWin.swift in Sources */,
 				858779302B10F8AA002D6CCC /* picaso.swift in Sources */,
 				858779322B11032F002D6CCC /* calderf.swift in Sources */,
