@@ -48,6 +48,15 @@ struct fontaineBlueLine: View {
                         
                     }
                 }
+                HStack{
+                    Image("fountaingreat")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                    NavigationLink(destination: crownfountain()) {
+                        Text("Fountain Of The Great Lakes")
+                        
+                    }
+                }
                 
                 
             }// this is the end of list
