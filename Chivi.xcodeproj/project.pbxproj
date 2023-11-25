@@ -12,6 +12,7 @@
 		85127EF82B05895A00B85166 /* Ninedragons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85127EF72B05895A00B85166 /* Ninedragons.swift */; };
 		8530976B2AF08F8200A7E8F3 /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8530976A2AF08F8200A7E8F3 /* stops.txt */; };
 		854596D72B125ADE006DCF8F /* eightstreet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854596D62B125ADE006DCF8F /* eightstreet.swift */; };
+		854596D92B125CC3006DCF8F /* josephf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854596D82B125CC3006DCF8F /* josephf.swift */; };
 		858779202B10E6EB002D6CCC /* berlinW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8587791F2B10E6EB002D6CCC /* berlinW.swift */; };
 		858779222B10E805002D6CCC /* berlinWin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858779212B10E805002D6CCC /* berlinWin.swift */; };
 		858779242B10EAC7002D6CCC /* squarezodiacs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858779232B10EAC7002D6CCC /* squarezodiacs.swift */; };
@@ -64,6 +65,7 @@
 		85127EF72B05895A00B85166 /* Ninedragons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ninedragons.swift; sourceTree = "<group>"; };
 		8530976A2AF08F8200A7E8F3 /* stops.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = stops.txt; sourceTree = "<group>"; };
 		854596D62B125ADE006DCF8F /* eightstreet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eightstreet.swift; sourceTree = "<group>"; };
+		854596D82B125CC3006DCF8F /* josephf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = josephf.swift; sourceTree = "<group>"; };
 		8587791F2B10E6EB002D6CCC /* berlinW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = berlinW.swift; sourceTree = "<group>"; };
 		858779212B10E805002D6CCC /* berlinWin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = berlinWin.swift; sourceTree = "<group>"; };
 		858779232B10EAC7002D6CCC /* squarezodiacs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = squarezodiacs.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				8587793D2B1250EA002D6CCC /* fountaingreat.swift */,
 				8587793F2B1252FD002D6CCC /* eaglefountain.swift */,
 				854596D62B125ADE006DCF8F /* eightstreet.swift */,
+				854596D82B125CC3006DCF8F /* josephf.swift */,
 				858779232B10EAC7002D6CCC /* squarezodiacs.swift */,
 				858779252B10ED2B002D6CCC /* uareb.swift */,
 				85127EF72B05895A00B85166 /* Ninedragons.swift */,
@@ -363,6 +366,7 @@
 				85DBDE9F2AE42E5700DB5763 /* number3.swift in Sources */,
 				85DBDE9D2AE42E4F00DB5763 /* number2.swift in Sources */,
 				858779242B10EAC7002D6CCC /* squarezodiacs.swift in Sources */,
+				854596D92B125CC3006DCF8F /* josephf.swift in Sources */,
 				858779262B10ED2B002D6CCC /* uareb.swift in Sources */,
 				85DBDEA12AE42E6A00DB5763 /* Number4.swift in Sources */,
 				85127EF62B05894500B85166 /* ChinatownGate.swift in Sources */,
