@@ -26,6 +26,7 @@
 		8587793A2B124BAD002D6CCC /* nicholasjfountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858779392B124BAD002D6CCC /* nicholasjfountain.swift */; };
 		8587793C2B124EE4002D6CCC /* crownfountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8587793B2B124EE4002D6CCC /* crownfountain.swift */; };
 		8587793E2B1250EA002D6CCC /* fountaingreat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8587793D2B1250EA002D6CCC /* fountaingreat.swift */; };
+		858779402B1252FD002D6CCC /* eaglefountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8587793F2B1252FD002D6CCC /* eaglefountain.swift */; };
 		85DBDE712AE42E3600DB5763 /* ChiviApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDE702AE42E3600DB5763 /* ChiviApp.swift */; };
 		85DBDE732AE42E3600DB5763 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDE722AE42E3600DB5763 /* ContentView.swift */; };
 		85DBDE752AE42E3800DB5763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85DBDE742AE42E3800DB5763 /* Assets.xcassets */; };
@@ -76,6 +77,7 @@
 		858779392B124BAD002D6CCC /* nicholasjfountain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nicholasjfountain.swift; sourceTree = "<group>"; };
 		8587793B2B124EE4002D6CCC /* crownfountain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crownfountain.swift; sourceTree = "<group>"; };
 		8587793D2B1250EA002D6CCC /* fountaingreat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fountaingreat.swift; sourceTree = "<group>"; };
+		8587793F2B1252FD002D6CCC /* eaglefountain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eaglefountain.swift; sourceTree = "<group>"; };
 		85DBDE6D2AE42E3600DB5763 /* Chivi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chivi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85DBDE702AE42E3600DB5763 /* ChiviApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiviApp.swift; sourceTree = "<group>"; };
 		85DBDE722AE42E3600DB5763 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				858779212B10E805002D6CCC /* berlinWin.swift */,
 				8587793B2B124EE4002D6CCC /* crownfountain.swift */,
 				8587793D2B1250EA002D6CCC /* fountaingreat.swift */,
+				8587793F2B1252FD002D6CCC /* eaglefountain.swift */,
 				858779232B10EAC7002D6CCC /* squarezodiacs.swift */,
 				858779252B10ED2B002D6CCC /* uareb.swift */,
 				85127EF72B05895A00B85166 /* Ninedragons.swift */,
@@ -349,6 +352,7 @@
 				858779282B10EF5F002D6CCC /* chinesemuseum.swift in Sources */,
 				8587792E2B10F75B002D6CCC /* eternalf.swift in Sources */,
 				8587793A2B124BAD002D6CCC /* nicholasjfountain.swift in Sources */,
+				858779402B1252FD002D6CCC /* eaglefountain.swift in Sources */,
 				858779222B10E805002D6CCC /* berlinWin.swift in Sources */,
 				858779302B10F8AA002D6CCC /* picaso.swift in Sources */,
 				858779322B11032F002D6CCC /* calderf.swift in Sources */,
