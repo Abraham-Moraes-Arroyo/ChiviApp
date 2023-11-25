@@ -21,6 +21,10 @@
 		8587792E2B10F75B002D6CCC /* eternalf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8587792D2B10F75B002D6CCC /* eternalf.swift */; };
 		858779302B10F8AA002D6CCC /* picaso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8587792F2B10F8AA002D6CCC /* picaso.swift */; };
 		858779322B11032F002D6CCC /* calderf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858779312B11032F002D6CCC /* calderf.swift */; };
+		858779362B124902002D6CCC /* fontaineBlueLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858779352B124902002D6CCC /* fontaineBlueLine.swift */; };
+		858779382B1249CB002D6CCC /* polonia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858779372B1249CB002D6CCC /* polonia.swift */; };
+		8587793A2B124BAD002D6CCC /* nicholasjfountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858779392B124BAD002D6CCC /* nicholasjfountain.swift */; };
+		8587793C2B124EE4002D6CCC /* crownfountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8587793B2B124EE4002D6CCC /* crownfountain.swift */; };
 		85DBDE712AE42E3600DB5763 /* ChiviApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDE702AE42E3600DB5763 /* ChiviApp.swift */; };
 		85DBDE732AE42E3600DB5763 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDE722AE42E3600DB5763 /* ContentView.swift */; };
 		85DBDE752AE42E3800DB5763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85DBDE742AE42E3800DB5763 /* Assets.xcassets */; };
@@ -66,6 +70,10 @@
 		8587792D2B10F75B002D6CCC /* eternalf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eternalf.swift; sourceTree = "<group>"; };
 		8587792F2B10F8AA002D6CCC /* picaso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = picaso.swift; sourceTree = "<group>"; };
 		858779312B11032F002D6CCC /* calderf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calderf.swift; sourceTree = "<group>"; };
+		858779352B124902002D6CCC /* fontaineBlueLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fontaineBlueLine.swift; sourceTree = "<group>"; };
+		858779372B1249CB002D6CCC /* polonia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = polonia.swift; sourceTree = "<group>"; };
+		858779392B124BAD002D6CCC /* nicholasjfountain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nicholasjfountain.swift; sourceTree = "<group>"; };
+		8587793B2B124EE4002D6CCC /* crownfountain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crownfountain.swift; sourceTree = "<group>"; };
 		85DBDE6D2AE42E3600DB5763 /* Chivi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chivi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85DBDE702AE42E3600DB5763 /* ChiviApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiviApp.swift; sourceTree = "<group>"; };
 		85DBDE722AE42E3600DB5763 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,7 +122,10 @@
 				8587792B2B10F58E002D6CCC /* standingb.swift */,
 				8587792D2B10F75B002D6CCC /* eternalf.swift */,
 				858779272B10EF5F002D6CCC /* chinesemuseum.swift */,
+				858779372B1249CB002D6CCC /* polonia.swift */,
+				858779392B124BAD002D6CCC /* nicholasjfountain.swift */,
 				858779212B10E805002D6CCC /* berlinWin.swift */,
+				8587793B2B124EE4002D6CCC /* crownfountain.swift */,
 				858779232B10EAC7002D6CCC /* squarezodiacs.swift */,
 				858779252B10ED2B002D6CCC /* uareb.swift */,
 				85127EF72B05895A00B85166 /* Ninedragons.swift */,
@@ -129,6 +140,7 @@
 			children = (
 				858779292B10F355002D6CCC /* mythicalblueline.swift */,
 				85127EF32B05865B00B85166 /* chinatown.swift */,
+				858779352B124902002D6CCC /* fontaineBlueLine.swift */,
 				8587791F2B10E6EB002D6CCC /* berlinW.swift */,
 			);
 			path = menus;
@@ -333,6 +345,7 @@
 				85DBDE732AE42E3600DB5763 /* ContentView.swift in Sources */,
 				858779282B10EF5F002D6CCC /* chinesemuseum.swift in Sources */,
 				8587792E2B10F75B002D6CCC /* eternalf.swift in Sources */,
+				8587793A2B124BAD002D6CCC /* nicholasjfountain.swift in Sources */,
 				858779222B10E805002D6CCC /* berlinWin.swift in Sources */,
 				858779302B10F8AA002D6CCC /* picaso.swift in Sources */,
 				858779322B11032F002D6CCC /* calderf.swift in Sources */,
@@ -345,8 +358,11 @@
 				85127EF62B05894500B85166 /* ChinatownGate.swift in Sources */,
 				85127EF82B05895A00B85166 /* Ninedragons.swift in Sources */,
 				85127EF42B05865B00B85166 /* chinatown.swift in Sources */,
+				858779362B124902002D6CCC /* fontaineBlueLine.swift in Sources */,
 				8587792A2B10F355002D6CCC /* mythicalblueline.swift in Sources */,
+				8587793C2B124EE4002D6CCC /* crownfountain.swift in Sources */,
 				858779202B10E6EB002D6CCC /* berlinW.swift in Sources */,
+				858779382B1249CB002D6CCC /* polonia.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
