@@ -15,6 +15,9 @@
 		854596D92B125CC3006DCF8F /* josephf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854596D82B125CC3006DCF8F /* josephf.swift */; };
 		854596DB2B125E57006DCF8F /* fisherb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854596DA2B125E57006DCF8F /* fisherb.swift */; };
 		854596DD2B125F83006DCF8F /* craneg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854596DC2B125F83006DCF8F /* craneg.swift */; };
+		854596DF2B1263E0006DCF8F /* doveg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854596DE2B1263E0006DCF8F /* doveg.swift */; };
+		854596E12B12650A006DCF8F /* turtleb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854596E02B12650A006DCF8F /* turtleb.swift */; };
+		854596E32B126595006DCF8F /* claranceb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854596E22B126595006DCF8F /* claranceb.swift */; };
 		858779202B10E6EB002D6CCC /* berlinW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8587791F2B10E6EB002D6CCC /* berlinW.swift */; };
 		858779222B10E805002D6CCC /* berlinWin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858779212B10E805002D6CCC /* berlinWin.swift */; };
 		858779242B10EAC7002D6CCC /* squarezodiacs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858779232B10EAC7002D6CCC /* squarezodiacs.swift */; };
@@ -70,6 +73,9 @@
 		854596D82B125CC3006DCF8F /* josephf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = josephf.swift; sourceTree = "<group>"; };
 		854596DA2B125E57006DCF8F /* fisherb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fisherb.swift; sourceTree = "<group>"; };
 		854596DC2B125F83006DCF8F /* craneg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = craneg.swift; sourceTree = "<group>"; };
+		854596DE2B1263E0006DCF8F /* doveg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doveg.swift; sourceTree = "<group>"; };
+		854596E02B12650A006DCF8F /* turtleb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = turtleb.swift; sourceTree = "<group>"; };
+		854596E22B126595006DCF8F /* claranceb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = claranceb.swift; sourceTree = "<group>"; };
 		8587791F2B10E6EB002D6CCC /* berlinW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = berlinW.swift; sourceTree = "<group>"; };
 		858779212B10E805002D6CCC /* berlinWin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = berlinWin.swift; sourceTree = "<group>"; };
 		858779232B10EAC7002D6CCC /* squarezodiacs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = squarezodiacs.swift; sourceTree = "<group>"; };
@@ -144,6 +150,9 @@
 				854596D82B125CC3006DCF8F /* josephf.swift */,
 				854596DA2B125E57006DCF8F /* fisherb.swift */,
 				854596DC2B125F83006DCF8F /* craneg.swift */,
+				854596DE2B1263E0006DCF8F /* doveg.swift */,
+				854596E02B12650A006DCF8F /* turtleb.swift */,
+				854596E22B126595006DCF8F /* claranceb.swift */,
 				858779232B10EAC7002D6CCC /* squarezodiacs.swift */,
 				858779252B10ED2B002D6CCC /* uareb.swift */,
 				85127EF72B05895A00B85166 /* Ninedragons.swift */,
@@ -363,6 +372,7 @@
 				85DBDE732AE42E3600DB5763 /* ContentView.swift in Sources */,
 				858779282B10EF5F002D6CCC /* chinesemuseum.swift in Sources */,
 				8587792E2B10F75B002D6CCC /* eternalf.swift in Sources */,
+				854596E32B126595006DCF8F /* claranceb.swift in Sources */,
 				8587793A2B124BAD002D6CCC /* nicholasjfountain.swift in Sources */,
 				858779402B1252FD002D6CCC /* eaglefountain.swift in Sources */,
 				854596DD2B125F83006DCF8F /* craneg.swift in Sources */,
@@ -383,10 +393,12 @@
 				858779362B124902002D6CCC /* fontaineBlueLine.swift in Sources */,
 				8587792A2B10F355002D6CCC /* mythicalblueline.swift in Sources */,
 				8587793C2B124EE4002D6CCC /* crownfountain.swift in Sources */,
+				854596E12B12650A006DCF8F /* turtleb.swift in Sources */,
 				854596D72B125ADE006DCF8F /* eightstreet.swift in Sources */,
 				8587793E2B1250EA002D6CCC /* fountaingreat.swift in Sources */,
 				858779202B10E6EB002D6CCC /* berlinW.swift in Sources */,
 				858779382B1249CB002D6CCC /* polonia.swift in Sources */,
+				854596DF2B1263E0006DCF8F /* doveg.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
