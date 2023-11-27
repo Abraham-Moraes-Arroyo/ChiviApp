@@ -32,22 +32,19 @@ struct number3: View {
                             .frame(width: 50, height: 50)
                         NavigationLink(destination: chinatown()) {
                             Text("ChinaTown RedLine")
-                            
-                            
                             if (cooltour.isFavorite){
                                 Image(systemName: "star.fill")
                                     .foregroundStyle(.yellow)
                             }
-
                         }
                     }// end of chinatown
                     HStack{
                         Image("berlin")
                             .resizable()
                             .frame(width: 50, height: 50)
-                        NavigationLink(destination: chinatown()) {
+                        NavigationLink(destination: berlinW()) {
                             Text("BerlinWall BrownLine")
-                            
+//                          41.884737, -87.631194
                             
                         }
                     }// end of berlinwall
@@ -55,25 +52,37 @@ struct number3: View {
                         Image("picaso")
                             .resizable()
                             .frame(width: 50, height: 50)
-                        NavigationLink(destination: chinatown()) {
+                        NavigationLink(destination: mythicalblueline()) {
                             Text("Mythical Monument BlueLine")
                             
                             
                         }
                     }// end of blueline
-                    HStack{
-                        Image("polishtriangle")
-                            .resizable()
-                            .frame(width: 50, height: 50)
-                        NavigationLink(destination: chinatown()) {
-                            Text("Fontaine BlueLine")
-                            
-                            
-                        }
-                    }// end of chinatown
+//                    agora
+//                    41.868123, -87.623380
+              
 
+                } // end of List
+                VStack{
+                    Text("More Extensive")
+                    List{
+                        HStack{
+                            Image("polishtriangle")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                            NavigationLink(destination: fontaineBlueLine()) {
+                                Text("Fontaine BlueLine")
+                            }
+                        }// end of chinatown
+                        
+                        
+                        
+                    }
                 }
-            }
+                
+            }// end of Vstack
+            
+       
         }
     }// end of body
 }
