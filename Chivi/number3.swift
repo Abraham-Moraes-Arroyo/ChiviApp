@@ -42,11 +42,11 @@ struct number3: View {
                                 Image(systemName: "star.fill")
                                     .foregroundStyle(.yellow)
                                     .onTapGesture(perform:  {
-                                        //1. check if its already checked
-                                        // if its checked then it continues and pushes the next favorite item. else turn star gray
+//1. check if its already checked
+// if its checked then it continues and pushes the next favorite item. else turn star gray
                                         
                                         
-//                                        I need to add an additional paramter where I can add the file that is in the menus folder I need to pass the view
+//I need to add an additional paramter where I can add the file that is in the menus folder I need to pass the view
                                         
 //    41.852652, -87.632226
 
@@ -55,7 +55,16 @@ struct number3: View {
                                         d.favorites.append(newfavoriteitem)
                                         print(d.favorites)
                                     })
-                            }
+                            } // end of adding a new tour to favorites
+                            
+                            
+                            //this is to check if the tour has already been placed in the favorite section.
+//                            if (cooltour.isFavorite == cooltour.isFavorite){
+//                                print(false)
+//                            }
+                            
+                            
+                            
                         }
                     }// end of chinatown
                     HStack{
