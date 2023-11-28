@@ -23,10 +23,13 @@ struct ChiviApp: App {
     
     // register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @EnvironmentObject var d:datamodel
+
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            at the end you will have to pass the var favorites at the end
+            ContentView(sample: 12)
         }
     }
 }

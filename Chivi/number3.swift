@@ -10,13 +10,19 @@ import MapKit
 
 struct tours {
     @State var isFavorite: Bool
+    
 }
+
 
 
 struct number3: View {
 
     let cooltour:tours = tours(isFavorite:true)
-
+//    view builder
+    
+    @State private var ischecked: Bool = false
+    @EnvironmentObject var d:datamodel
+    // at the end you will be getting rid of the @ but keeping the var model .
     
     var body: some View {
         NavigationView{
@@ -35,6 +41,20 @@ struct number3: View {
                             if (cooltour.isFavorite){
                                 Image(systemName: "star.fill")
                                     .foregroundStyle(.yellow)
+                                    .onTapGesture(perform:  {
+                                        //1. check if its already checked
+                                        // if its checked then it continues and pushes the next favorite item. else turn star gray
+                                        
+                                        
+//                                        I need to add an additional paramter where I can add the file that is in the menus folder I need to pass the view
+                                        
+//    41.852652, -87.632226
+
+                                        let newfavoriteitem: favoriteitem = favoriteitem(name: "ChinaTown RedLine", image: "chinatownmid", lat:     41.852652, long: -87.632226)
+                                        
+                                        d.favorites.append(newfavoriteitem)
+                                        print(d.favorites)
+                                    })
                             }
                         }
                     }// end of chinatown
@@ -88,8 +108,11 @@ struct number3: View {
 }
 
 #Preview {
-    number3()
+    number3().environmentObject(datamodel())
 }
+
+
+
 //
 //final class ContentViewModel:NSObject, ObservableObject,
 //    CLLocationManagerDelegate{

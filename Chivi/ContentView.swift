@@ -8,6 +8,7 @@
 import SwiftUI
 // This is rogelio
 struct ContentView: View {
+    var sample: Int
     var body: some View {
         TabView{
             number1()
@@ -35,5 +36,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView(sample: 12)
 }

@@ -10,6 +10,8 @@
 		85127EF42B05865B00B85166 /* chinatown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85127EF32B05865B00B85166 /* chinatown.swift */; };
 		85127EF62B05894500B85166 /* ChinatownGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85127EF52B05894500B85166 /* ChinatownGate.swift */; };
 		85127EF82B05895A00B85166 /* Ninedragons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85127EF72B05895A00B85166 /* Ninedragons.swift */; };
+		852232052B162B7600D9D743 /* datamodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852232042B162B7600D9D743 /* datamodel.swift */; };
+		852232092B162CDA00D9D743 /* favoriteitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852232082B162CDA00D9D743 /* favoriteitem.swift */; };
 		8530976B2AF08F8200A7E8F3 /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8530976A2AF08F8200A7E8F3 /* stops.txt */; };
 		854596D72B125ADE006DCF8F /* eightstreet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854596D62B125ADE006DCF8F /* eightstreet.swift */; };
 		854596D92B125CC3006DCF8F /* josephf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854596D82B125CC3006DCF8F /* josephf.swift */; };
@@ -47,10 +49,6 @@
 		85DBDE9D2AE42E4F00DB5763 /* number2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDE9C2AE42E4F00DB5763 /* number2.swift */; };
 		85DBDE9F2AE42E5700DB5763 /* number3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDE9E2AE42E5700DB5763 /* number3.swift */; };
 		85DBDEA12AE42E6A00DB5763 /* Number4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDEA02AE42E6A00DB5763 /* Number4.swift */; };
-		85E6D4F42AF55A5C00AAA28F /* redlineMile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E6D4F32AF55A5C00AAA28F /* redlineMile.swift */; };
-		85E6D4F62AF55EAF00AAA28F /* berlinwall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E6D4F52AF55EAF00AAA28F /* berlinwall.swift */; };
-		85E6D4F82AF560BA00AAA28F /* bluelinepicaso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E6D4F72AF560BA00AAA28F /* bluelinepicaso.swift */; };
-		85E940B92AF48D2400FB50BA /* Combo2and3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E940B82AF48D2300FB50BA /* Combo2and3.swift */; };
 		B9882B1E2B155DE5007709E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9882B1D2B155DE5007709E3 /* GoogleService-Info.plist */; };
 		B9882B212B155EA3007709E3 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B9882B202B155EA3007709E3 /* FirebaseAnalytics */; };
 		B9882B232B155EA3007709E3 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = B9882B222B155EA3007709E3 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -102,6 +100,8 @@
 		85127EF32B05865B00B85166 /* chinatown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chinatown.swift; sourceTree = "<group>"; };
 		85127EF52B05894500B85166 /* ChinatownGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChinatownGate.swift; sourceTree = "<group>"; };
 		85127EF72B05895A00B85166 /* Ninedragons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ninedragons.swift; sourceTree = "<group>"; };
+		852232042B162B7600D9D743 /* datamodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = datamodel.swift; sourceTree = "<group>"; };
+		852232082B162CDA00D9D743 /* favoriteitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoriteitem.swift; sourceTree = "<group>"; };
 		8530976A2AF08F8200A7E8F3 /* stops.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = stops.txt; sourceTree = "<group>"; };
 		854596D62B125ADE006DCF8F /* eightstreet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eightstreet.swift; sourceTree = "<group>"; };
 		854596D82B125CC3006DCF8F /* josephf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = josephf.swift; sourceTree = "<group>"; };
@@ -142,10 +142,6 @@
 		85DBDE9C2AE42E4F00DB5763 /* number2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = number2.swift; sourceTree = "<group>"; };
 		85DBDE9E2AE42E5700DB5763 /* number3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = number3.swift; sourceTree = "<group>"; };
 		85DBDEA02AE42E6A00DB5763 /* Number4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number4.swift; sourceTree = "<group>"; };
-		85E6D4F32AF55A5C00AAA28F /* redlineMile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redlineMile.swift; sourceTree = "<group>"; };
-		85E6D4F52AF55EAF00AAA28F /* berlinwall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = berlinwall.swift; sourceTree = "<group>"; };
-		85E6D4F72AF560BA00AAA28F /* bluelinepicaso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bluelinepicaso.swift; sourceTree = "<group>"; };
-		85E940B82AF48D2300FB50BA /* Combo2and3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combo2and3.swift; sourceTree = "<group>"; };
 		B9882B1D2B155DE5007709E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -274,6 +270,8 @@
 				854596E62B12738A006DCF8F /* purchasingp.swift */,
 				85DBDE9E2AE42E5700DB5763 /* number3.swift */,
 				85DBDEA02AE42E6A00DB5763 /* Number4.swift */,
+				852232042B162B7600D9D743 /* datamodel.swift */,
+				852232082B162CDA00D9D743 /* favoriteitem.swift */,
 				858779332B110BD1002D6CCC /* individuallocations */,
 				858779342B110CE6002D6CCC /* menus */,
 				85DBDE742AE42E3800DB5763 /* Assets.xcassets */,
@@ -474,6 +472,8 @@
 				854596E72B12738A006DCF8F /* purchasingp.swift in Sources */,
 				85DBDE9B2AE42E4900DB5763 /* number1.swift in Sources */,
 				8587792C2B10F58E002D6CCC /* standingb.swift in Sources */,
+				852232052B162B7600D9D743 /* datamodel.swift in Sources */,
+				852232092B162CDA00D9D743 /* favoriteitem.swift in Sources */,
 				85DBDE732AE42E3600DB5763 /* ContentView.swift in Sources */,
 				858779282B10EF5F002D6CCC /* chinesemuseum.swift in Sources */,
 				8587792E2B10F75B002D6CCC /* eternalf.swift in Sources */,
