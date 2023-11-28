@@ -38,10 +38,11 @@ struct number3: View {
                             .frame(width: 50, height: 50)
                         NavigationLink(destination: chinatown()) {
                             Text("ChinaTown RedLine")
+                               
                             if (cooltour.isFavorite){
                                 Image(systemName: "star.fill")
-                                    .foregroundStyle(.yellow)
-                                    .onTapGesture(perform:  {
+                                    .foregroundStyle(.gray)
+                                    .onTapGesture(perform: {
 //1. check if its already checked
 // if its checked then it continues and pushes the next favorite item. else turn star gray
                                         
@@ -54,8 +55,11 @@ struct number3: View {
                                         
                                         d.favorites.append(newfavoriteitem)
                                         print(d.favorites)
+                                            
                                     })
+                                    
                             } // end of adding a new tour to favorites
+                          
                             
                             
                             //this is to check if the tour has already been placed in the favorite section.
