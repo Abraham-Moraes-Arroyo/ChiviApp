@@ -18,72 +18,29 @@ struct number1: View {
                             .resizable()
                             .scaledToFit()
                         
-                    }.offset(y: -30)
-                    
-                    
-                    
-                    
-                    Divider()
-                    Image("chinatownmid")
-                        .resizable()
-                        .scaledToFit()
-                        .clipShape(Circle())
-                        .overlay {
-                            Circle().stroke(.white, lineWidth: 4)
-                        }
-                        .shadow(radius: 9)
-                        .offset(y: -200)
-                        .padding(.bottom, -130)
-                        .frame(height:300)
-                    
-                    Text("Welcome Back!  Abraham")
-                        .font(.title)
-                        .offset(y:-160)
-                        .offset(x:20)
-                    
-                    
-                    Text("Continue where you left off")
-                        .offset(y:-160)
-                        .offset(x:30)
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                    HStack{
-                        List{
-                            HStack{
-                                Image("chinatownmid")
-                                    .resizable()
-                                    .frame(width: 50, height: 50)
-                                NavigationLink(destination: chinatown()) {
-                                    Text("ChinaTown RedLine")
-                                    
-                                    
-                                }
-                            }// end of chinatown
-                        }
                     }
-                    .offset(y: -160)
                     
-                    Text("Favorites")
-                        .offset(y:-160)
-                        .offset(x:30)
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
+                    
+                    
+                    
+                    
+                  
                     VStack{
-                        List{
-                            HStack{
-                                Image("chinatownmid")
-                                    .resizable()
-                                    .frame(width: 50, height: 50)
-                                NavigationLink(destination: chinatown()) {
-                                    Text("ChinaTown RedLine")
-                                    
-                                    
-                                }
-                            }// end of chinatown
+                       Text("Getting Started")
+                            Text("Please make sure to check the second screen in order to see more details on how to get a ventra and purchase ventra passes. ")
                         
-                    }
+                        
+                    }.offset(y:-100)
+                    .offset(x:50)
+                    .frame(width: 300)
+
+                    .font(.title)
+                    
+                    
+                    VStack{
+                       
                 }
-                .offset(y: -160)
+                
                
                 
             }// end of Vstack

@@ -63,9 +63,12 @@ struct purchasing: View {
             
             
             Text("Adding A virtual Ventra Card")
+                .font(.title)
 //            YoutubeVideoView(youtubeVideoID: "xk6HcGUXZ_w")
 //                .scaledToFit()
 
+            let link = "[Tutorial](https://www.youtube.com/embed/xk6HcGUXZ_w)"
+            Text(.init(link))
              
             
         }// end of Scrollview

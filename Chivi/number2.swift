@@ -24,7 +24,7 @@ struct number2: View {
 
                     
                     
-                    NavigationLink("Purchasing a Pass", destination: purchasing())
+                    NavigationLink("Purchasing a Pass", destination: purchasingp())
                         .offset(y:-30)
 
                 }
