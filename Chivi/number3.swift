@@ -39,10 +39,10 @@ struct number3: View {
                         NavigationLink(destination: chinatown()) {
                             Text("ChinaTown RedLine")
                                
-                            if (cooltour.isFavorite){
-                                Image(systemName: "star.fill")
-                                    .foregroundStyle(.gray)
-                                    .onTapGesture(perform: {
+//                            if (cooltour.isFavorite){
+//                                Image(systemName: "star.fill")
+//                                    .foregroundStyle(.gray)
+//                                    .onTapGesture(perform: {
 //1. check if its already checked
 // if its checked then it continues and pushes the next favorite item. else turn star gray
                                         
@@ -51,14 +51,14 @@ struct number3: View {
                                         
 //    41.852652, -87.632226
 
-                                        let newfavoriteitem: favoriteitem = favoriteitem(name: "ChinaTown RedLine", image: "chinatownmid", lat:     41.852652, long: -87.632226)
-                                        
-                                        d.favorites.append(newfavoriteitem)
-                                        print(d.favorites)
-                                            
-                                    })
-                                    
-                            } // end of adding a new tour to favorites
+//                                        let newfavoriteitem: favoriteitem = favoriteitem(name: "ChinaTown RedLine", image: "chinatownmid", lat:     41.852652, long: -87.632226)
+//                                        
+//                                        d.favorites.append(newfavoriteitem)
+//                                        print(d.favorites)
+//                                            
+//                                    })
+//                                    
+//                            } // end of adding a new tour to favorites
                           
                             
                             
