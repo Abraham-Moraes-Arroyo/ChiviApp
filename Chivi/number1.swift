@@ -23,10 +23,11 @@ struct number1: View {
                     
                     
                     
-                    
                   
                     VStack{
                        Text("Getting Started")
+                        Divider()
+
                             Text("Please make sure to check the second screen in order to see more details on how to get a ventra and purchase ventra passes. ")
                         
                         
