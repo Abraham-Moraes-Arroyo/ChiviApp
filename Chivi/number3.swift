@@ -36,7 +36,7 @@ struct number3: View {
                         Image("chinatownmid")
                             .resizable()
                             .frame(width: 50, height: 50)
-                        NavigationLink(destination: chinatown()) {
+                        NavigationLink(destination: dynamictours(tourId: "china-town-tour")) {
                             Text("ChinaTown RedLine")
                                
 //                            if (cooltour.isFavorite){

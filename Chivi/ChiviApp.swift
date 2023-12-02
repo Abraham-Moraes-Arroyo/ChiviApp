@@ -29,8 +29,9 @@ struct ChiviApp: App {
     var body: some Scene {
         WindowGroup {
 //            at the end you will have to pass the var favorites at the end
-//            ContentView(sample: 12)
-            dynamictours(tourId: "china-town-tour")
+            ContentView(sample: 12)
+            // this was added on Friday Dec 1
+//            dynamictours(tourId: "china-town-tour")
         }
     }
 }

@@ -142,32 +142,38 @@ struct dynamictours: View {
             }
         }.onAppear{
             
-            var tempDocuments: [Destination] = []
             Task{
-                db.collection(tourId).getDocuments() { (querySnapshot, err) in
-                    if let err = err {
-                        print("Error getting documents: \(err)")
-                    } else {
-                        for document in querySnapshot!.documents {
-                            
-                            let tempDestinationData = document.data()
-                            
-                            let tempDestination = Destination(dictionary: tempDestinationData)
-                            tempDocuments.append(tempDestination)
-                            
-                            
-                            
-                            print("\(document.documentID) => \(document.data())")
-                        }
+                do{
+                    var tempDocuments: [Destination] = []
+
+                    let tourSnapShot = try await db.collection(tourId).getDocuments()
+                    
+                    for document in tourSnapShot.documents{
+                        let tempDestinationData = document.data()
+                        
+                        let tempDestination = Destination(dictionary: tempDestinationData)
+                        
+                        tempDocuments.append(tempDestination)
+                        
+                        print("\(document.documentID) => \(document.data())")
                     }
+                    
+                    
+                    destinations = tempDocuments
+                    
+                }catch{
+                    print("Error Caught While Converting POI References to Destinations \(error)")
                 }
                 
-            }
+                
+                
+                
+            }// end of Task
             
             
-            destinations = tempDocuments
             
-        }
+            
+        } // onAppear ending curly brace
     }
 }
 
