@@ -70,8 +70,10 @@ struct DynamicLocationView: View {
                     Text(individualDestination.description)
                     Text("")
                     Button("Go", action:{
-                        let latitude = 41.852652
-                        let longitude = -87.632226
+                        
+                        // I made some changes here to check if we can have the lat and long from the firebase be called and placed here instead of storing the numbers hardcoded
+                        let latitude = individualDestination.latitude
+                        let longitude = individualDestination.longitude
                         let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
                         if UIApplication.shared.canOpenURL(url!) {
                             UIApplication.shared.open(url!, options: [:], completionHandler: nil)
