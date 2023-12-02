@@ -21,7 +21,7 @@ struct number3: View {
 //    view builder
     
     @State private var ischecked: Bool = false
-    @EnvironmentObject var d:datamodel
+    
     // at the end you will be getting rid of the @ but keeping the var model .
     
     var body: some View {
@@ -121,7 +121,7 @@ struct number3: View {
 }
 
 #Preview {
-    number3().environmentObject(datamodel())
+    number3()
 }
 
 

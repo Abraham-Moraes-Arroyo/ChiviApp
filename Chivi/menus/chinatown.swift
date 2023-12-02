@@ -20,6 +20,8 @@ struct chinatown: View {
 
     let coolRestaurant:Chinatowns = Chinatowns(isFavorite:true)
     
+    @State private var destinations: [Destination] = []
+    
     var body: some View {
         
         
@@ -30,6 +32,13 @@ struct chinatown: View {
             Text("In this route you will see")
                 .fontWeight(.heavy)
             List{
+                
+//                ForEach(locations) { location in
+//                        Text(locations.title)
+//                    }
+//                
+//                
+                
                 HStack{
                     if (coolRestaurant.isFavorite){
                         Image(systemName: "star.fill")

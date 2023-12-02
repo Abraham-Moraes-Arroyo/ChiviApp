@@ -10,8 +10,6 @@
 		85127EF42B05865B00B85166 /* chinatown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85127EF32B05865B00B85166 /* chinatown.swift */; };
 		85127EF62B05894500B85166 /* ChinatownGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85127EF52B05894500B85166 /* ChinatownGate.swift */; };
 		85127EF82B05895A00B85166 /* Ninedragons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85127EF72B05895A00B85166 /* Ninedragons.swift */; };
-		852232052B162B7600D9D743 /* datamodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852232042B162B7600D9D743 /* datamodel.swift */; };
-		852232092B162CDA00D9D743 /* favoriteitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852232082B162CDA00D9D743 /* favoriteitem.swift */; };
 		8530976B2AF08F8200A7E8F3 /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8530976A2AF08F8200A7E8F3 /* stops.txt */; };
 		854596D72B125ADE006DCF8F /* eightstreet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854596D62B125ADE006DCF8F /* eightstreet.swift */; };
 		854596D92B125CC3006DCF8F /* josephf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854596D82B125CC3006DCF8F /* josephf.swift */; };
@@ -22,6 +20,9 @@
 		854596E32B126595006DCF8F /* claranceb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854596E22B126595006DCF8F /* claranceb.swift */; };
 		854596E52B127379006DCF8F /* purchasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854596E42B127379006DCF8F /* purchasing.swift */; };
 		854596E72B12738A006DCF8F /* purchasingp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854596E62B12738A006DCF8F /* purchasingp.swift */; };
+		855371FB2B18001500D7F476 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855371FA2B18001400D7F476 /* model.swift */; };
+		855371FD2B1803FA00D7F476 /* database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855371FC2B1803FA00D7F476 /* database.swift */; };
+		855371FF2B1807F400D7F476 /* contentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855371FE2B1807F400D7F476 /* contentViewModel.swift */; };
 		858779202B10E6EB002D6CCC /* berlinW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8587791F2B10E6EB002D6CCC /* berlinW.swift */; };
 		858779222B10E805002D6CCC /* berlinWin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858779212B10E805002D6CCC /* berlinWin.swift */; };
 		858779242B10EAC7002D6CCC /* squarezodiacs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858779232B10EAC7002D6CCC /* squarezodiacs.swift */; };
@@ -49,6 +50,9 @@
 		85DBDE9D2AE42E4F00DB5763 /* number2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDE9C2AE42E4F00DB5763 /* number2.swift */; };
 		85DBDE9F2AE42E5700DB5763 /* number3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDE9E2AE42E5700DB5763 /* number3.swift */; };
 		85DBDEA12AE42E6A00DB5763 /* Number4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBDEA02AE42E6A00DB5763 /* Number4.swift */; };
+		85F4CDA52B1AA7F500CB820F /* dynamicTours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F4CDA42B1AA7F400CB820F /* dynamicTours.swift */; };
+		85F4CDA72B1AAC2800CB820F /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F4CDA62B1AAC2800CB820F /* DataModels.swift */; };
+		85F4CDA92B1AAE1B00CB820F /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F4CDA82B1AAE1B00CB820F /* Destination.swift */; };
 		B9882B1E2B155DE5007709E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9882B1D2B155DE5007709E3 /* GoogleService-Info.plist */; };
 		B9882B212B155EA3007709E3 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B9882B202B155EA3007709E3 /* FirebaseAnalytics */; };
 		B9882B232B155EA3007709E3 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = B9882B222B155EA3007709E3 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -100,8 +104,6 @@
 		85127EF32B05865B00B85166 /* chinatown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chinatown.swift; sourceTree = "<group>"; };
 		85127EF52B05894500B85166 /* ChinatownGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChinatownGate.swift; sourceTree = "<group>"; };
 		85127EF72B05895A00B85166 /* Ninedragons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ninedragons.swift; sourceTree = "<group>"; };
-		852232042B162B7600D9D743 /* datamodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = datamodel.swift; sourceTree = "<group>"; };
-		852232082B162CDA00D9D743 /* favoriteitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoriteitem.swift; sourceTree = "<group>"; };
 		8530976A2AF08F8200A7E8F3 /* stops.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = stops.txt; sourceTree = "<group>"; };
 		854596D62B125ADE006DCF8F /* eightstreet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eightstreet.swift; sourceTree = "<group>"; };
 		854596D82B125CC3006DCF8F /* josephf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = josephf.swift; sourceTree = "<group>"; };
@@ -112,6 +114,9 @@
 		854596E22B126595006DCF8F /* claranceb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = claranceb.swift; sourceTree = "<group>"; };
 		854596E42B127379006DCF8F /* purchasing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = purchasing.swift; sourceTree = "<group>"; };
 		854596E62B12738A006DCF8F /* purchasingp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = purchasingp.swift; sourceTree = "<group>"; };
+		855371FA2B18001400D7F476 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		855371FC2B1803FA00D7F476 /* database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = database.swift; sourceTree = "<group>"; };
+		855371FE2B1807F400D7F476 /* contentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentViewModel.swift; sourceTree = "<group>"; };
 		8587791F2B10E6EB002D6CCC /* berlinW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = berlinW.swift; sourceTree = "<group>"; };
 		858779212B10E805002D6CCC /* berlinWin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = berlinWin.swift; sourceTree = "<group>"; };
 		858779232B10EAC7002D6CCC /* squarezodiacs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = squarezodiacs.swift; sourceTree = "<group>"; };
@@ -142,6 +147,9 @@
 		85DBDE9C2AE42E4F00DB5763 /* number2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = number2.swift; sourceTree = "<group>"; };
 		85DBDE9E2AE42E5700DB5763 /* number3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = number3.swift; sourceTree = "<group>"; };
 		85DBDEA02AE42E6A00DB5763 /* Number4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number4.swift; sourceTree = "<group>"; };
+		85F4CDA42B1AA7F400CB820F /* dynamicTours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dynamicTours.swift; sourceTree = "<group>"; };
+		85F4CDA62B1AAC2800CB820F /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		85F4CDA82B1AAE1B00CB820F /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		B9882B1D2B155DE5007709E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -231,6 +239,7 @@
 			children = (
 				858779292B10F355002D6CCC /* mythicalblueline.swift */,
 				85127EF32B05865B00B85166 /* chinatown.swift */,
+				85F4CDA42B1AA7F400CB820F /* dynamicTours.swift */,
 				8587791F2B10E6EB002D6CCC /* berlinW.swift */,
 				858779352B124902002D6CCC /* fontaineBlueLine.swift */,
 			);
@@ -269,9 +278,12 @@
 				854596E42B127379006DCF8F /* purchasing.swift */,
 				854596E62B12738A006DCF8F /* purchasingp.swift */,
 				85DBDE9E2AE42E5700DB5763 /* number3.swift */,
+				855371FA2B18001400D7F476 /* model.swift */,
+				855371FE2B1807F400D7F476 /* contentViewModel.swift */,
+				855371FC2B1803FA00D7F476 /* database.swift */,
 				85DBDEA02AE42E6A00DB5763 /* Number4.swift */,
-				852232042B162B7600D9D743 /* datamodel.swift */,
-				852232082B162CDA00D9D743 /* favoriteitem.swift */,
+				85F4CDA62B1AAC2800CB820F /* DataModels.swift */,
+				85F4CDA82B1AAE1B00CB820F /* Destination.swift */,
 				858779332B110BD1002D6CCC /* individuallocations */,
 				858779342B110CE6002D6CCC /* menus */,
 				85DBDE742AE42E3800DB5763 /* Assets.xcassets */,
@@ -471,9 +483,9 @@
 			files = (
 				854596E72B12738A006DCF8F /* purchasingp.swift in Sources */,
 				85DBDE9B2AE42E4900DB5763 /* number1.swift in Sources */,
+				855371FB2B18001500D7F476 /* model.swift in Sources */,
 				8587792C2B10F58E002D6CCC /* standingb.swift in Sources */,
-				852232052B162B7600D9D743 /* datamodel.swift in Sources */,
-				852232092B162CDA00D9D743 /* favoriteitem.swift in Sources */,
+				855371FF2B1807F400D7F476 /* contentViewModel.swift in Sources */,
 				85DBDE732AE42E3600DB5763 /* ContentView.swift in Sources */,
 				858779282B10EF5F002D6CCC /* chinesemuseum.swift in Sources */,
 				8587792E2B10F75B002D6CCC /* eternalf.swift in Sources */,
@@ -484,11 +496,14 @@
 				858779222B10E805002D6CCC /* berlinWin.swift in Sources */,
 				858779302B10F8AA002D6CCC /* picaso.swift in Sources */,
 				858779322B11032F002D6CCC /* calderf.swift in Sources */,
+				855371FD2B1803FA00D7F476 /* database.swift in Sources */,
 				854596E52B127379006DCF8F /* purchasing.swift in Sources */,
 				85DBDE712AE42E3600DB5763 /* ChiviApp.swift in Sources */,
 				85DBDE9F2AE42E5700DB5763 /* number3.swift in Sources */,
 				85DBDE9D2AE42E4F00DB5763 /* number2.swift in Sources */,
 				858779242B10EAC7002D6CCC /* squarezodiacs.swift in Sources */,
+				85F4CDA52B1AA7F500CB820F /* dynamicTours.swift in Sources */,
+				85F4CDA92B1AAE1B00CB820F /* Destination.swift in Sources */,
 				854596D92B125CC3006DCF8F /* josephf.swift in Sources */,
 				858779262B10ED2B002D6CCC /* uareb.swift in Sources */,
 				85DBDEA12AE42E6A00DB5763 /* Number4.swift in Sources */,
@@ -500,6 +515,7 @@
 				8587792A2B10F355002D6CCC /* mythicalblueline.swift in Sources */,
 				8587793C2B124EE4002D6CCC /* crownfountain.swift in Sources */,
 				854596E12B12650A006DCF8F /* turtleb.swift in Sources */,
+				85F4CDA72B1AAC2800CB820F /* DataModels.swift in Sources */,
 				854596D72B125ADE006DCF8F /* eightstreet.swift in Sources */,
 				8587793E2B1250EA002D6CCC /* fountaingreat.swift in Sources */,
 				858779202B10E6EB002D6CCC /* berlinW.swift in Sources */,
