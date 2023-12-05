@@ -47,7 +47,7 @@ struct mythicalblueline: View {
                 }// end of chinatown Gate
                 
                 
-                
+        //Dec 5 10:34am
                 HStack{
                     Image("standingb")
                         .resizable()

@@ -105,7 +105,6 @@
 // Created by Devin Grischow on 12/2/23.
 //
 import SwiftUI
-import SwiftUI
 import MapKit
 struct DynamicLocationView: View {
 //  41.852652, -87.632226
