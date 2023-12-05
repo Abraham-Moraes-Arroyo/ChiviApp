@@ -61,7 +61,7 @@ struct crownfountain: View {
                     Text("About  ")
                         .font(.title2)
 //https://www.chicago.gov/city/en/depts/dca/supp_info/chicago_s_publicartcrownfountaininmillenniumpark.html
-                    Text("The fountain consists of two 50-foot glass block towers at each end of a shallow reflecting pool. The towers project video images from a broad social spectrum of Chicago citizens, a reference to the traditional use of gargoyles in fountains, where faces of mythological beings were sculpted with open mouths to allow water, a symbol of life, to flow out..")
+                    Text("The fountain consists of two 50-foot glass block towers at each end of a shallow reflecting pool. The towers project video images from a broad social spectrum of Chicago citizens, a reference to the traditional use of gargoyles in fountains, where faces of mythological beings were sculpted with open mouths to allow water, a symbol of life, to flow out.")
                     Text("")
                     Button("Go", action:{
                         let latitude = 41.881719

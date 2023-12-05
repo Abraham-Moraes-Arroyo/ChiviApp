@@ -59,7 +59,7 @@ struct mythicalblueline: View {
                  
                 }// end of chinatown Gate
                 HStack{
-                    Image("standingb")
+                    Image("cf")
                         .resizable()
                         .frame(width: 50, height: 50)
                     NavigationLink(destination: standingb()) {
