@@ -38,34 +38,6 @@ struct number3: View {
                             .frame(width: 50, height: 50)
                         NavigationLink(destination: dynamictours(tourId: "china-town-tour")) {
                             Text("ChinaTown RedLine")
-                               
-//                            if (cooltour.isFavorite){
-//                                Image(systemName: "star.fill")
-//                                    .foregroundStyle(.gray)
-//                                    .onTapGesture(perform: {
-//1. check if its already checked
-// if its checked then it continues and pushes the next favorite item. else turn star gray
-                                        
-                                        
-//I need to add an additional paramter where I can add the file that is in the menus folder I need to pass the view
-                                        
-//    41.852652, -87.632226
-
-//                                        let newfavoriteitem: favoriteitem = favoriteitem(name: "ChinaTown RedLine", image: "chinatownmid", lat:     41.852652, long: -87.632226)
-//                                        
-//                                        d.favorites.append(newfavoriteitem)
-//                                        print(d.favorites)
-//                                            
-//                                    })
-//                                    
-//                            } // end of adding a new tour to favorites
-                          
-                            
-                            
-                            //this is to check if the tour has already been placed in the favorite section.
-//                            if (cooltour.isFavorite == cooltour.isFavorite){
-//                                print(false)
-//                            }
                             
                             
                             
@@ -75,17 +47,22 @@ struct number3: View {
                         Image("berlin")
                             .resizable()
                             .frame(width: 50, height: 50)
-                        NavigationLink(destination: berlinW()) {
+                        
+                        
+                        // here is where you need to change 
+                        NavigationLink(destination: dynamictours(tourId: "berlinBrownLine")){
                             Text("BerlinWall BrownLine")
 //                          41.884737, -87.631194
                             
                         }
                     }// end of berlinwall
+                    
+//                    mythicalblueline
                     HStack{
                         Image("picaso")
                             .resizable()
                             .frame(width: 50, height: 50)
-                        NavigationLink(destination: mythicalblueline()) {
+                        NavigationLink(destination: dynamictours(tourId: "mythicalblueline")){
                             Text("Mythical Monument BlueLine")
                             
                             
@@ -103,7 +80,7 @@ struct number3: View {
                             Image("polishtriangle")
                                 .resizable()
                                 .frame(width: 50, height: 50)
-                            NavigationLink(destination: fontaineBlueLine()) {
+                            NavigationLink(destination: dynamictours(tourId: "Fontaine-BlueLine")){
                                 Text("Fontaine BlueLine")
                             }
                         }// end of chinatown

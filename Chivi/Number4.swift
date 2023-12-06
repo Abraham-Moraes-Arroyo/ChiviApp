@@ -14,21 +14,11 @@ struct Number4: View {
     
     
     var body: some View {
-        Text("Favorite Tours and Selected Options")
-            .fontWeight(.heavy)
-        List{
-            
-            HStack{
-                Image(systemName: "star.fill")
-                    .foregroundStyle(.yellow)
-                Image("chinatownmid")
-                    .resizable()
-                    .frame(width: 50, height: 50)
-                NavigationLink(destination: ChinatownGate()) {
-                    Text("ChinaTown Gate")
-                }// end of navigation link
-            }// end of hstack
-        }// end of list
+        VStack{
+            Text("Favorite Tours and Selected Options")
+                .fontWeight(.heavy)
+            // this should fix having the additional screen on the far right.
+        }
     }
 }
 
