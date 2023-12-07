@@ -4,9 +4,11 @@
 //
 //  Created by Rogelio Lozano on 11/29/23.
 //
-
+import Foundation
 import SwiftUI
 import Firebase
+import FirebaseFirestore
+let fs = Firestore.firestore()
 
 struct Login: View {
     @State private var email = ""
@@ -118,21 +120,47 @@ struct Login: View {
             }
         }
     }
-    
+    // this was added after the adding of the code from the first screen shot
+    //let fs = Firestore.firestore() // also add this to the button
     
     func register(){
-        Auth.auth().createUser(withEmail: email, password: password) {result, error in
-            if error != nil {
-                print(error!.localizedDescription)
+        //this was modified according to what Devin provided
+        Auth.auth().createUser(withEmail: email, password: password) {user, error in
+            if error == nil && user != nil{
+                //here I needed to switch from user to result
+                let userDocData: [String: Any] = ["userID":user?.user.uid]
+                fs.collection("Users").document((user?.user.uid)!).setData(userDocData)
+                print("New User Created")
+            } else {
+                print("Error created new user: \(error!.localizedDescription)")
             }
         }
-    }
-}
+    }// bottom of create users
+    
+    
+//    have the code here first
+//    this goes in the button
+//    let docref = fs.collection("Users").document((Auth.auth().currentUser?.uid.description)!)
+//    //Docref is refering to the current users document
+//    let favorites:[String] // favorites will always be empty with one item, but the firebase will treat them as an array
+//    favorites.append(Destination.name)//TODO COme back to this
+//    docRef.setData(["favorites": self.retrivedMealStrings], merge: true){ error in
+//        if let error = error {
+//            print("Error writing document: \(error)")
+//            
+//        } else {
+//            print("Document succesfully merged!")
+//        }
+//    }
+    
+}// the absolute end
+
+//have the code here if the here first doesn't work
 
 
 struct Login_Preview: PreviewProvider{
     static var previews: some View{
-        Login()
+        Login()// do I need to have the name: "", image: "", description: "", and so on here?
     }
 }
 
