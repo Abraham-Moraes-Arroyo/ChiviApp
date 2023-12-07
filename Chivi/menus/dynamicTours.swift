@@ -13,6 +13,11 @@ import FirebaseAuth
 //}
 struct dynamictours: View {
   //Here is where I am going to have the favorite variable where we will then recall the favorites in a different screen
+    
+//    this is a variable in order to have the screen/ favorites to show up I got it from a tutorial in hacking Swift
+@State var showGreeting = true
+    
+    
   var tourId: String
   let db = Firestore.firestore()
 //  let coolRestaurant:Chinatowns = Chinatowns(isFavorite:true)
@@ -25,7 +30,16 @@ struct dynamictours: View {
     VStack{
       Text("In this route you will see")
         .fontWeight(.heavy)
-   //have the switch here. 
+   //have the switch here.
+        
+        Toggle(isOn: $showGreeting){
+            Text("Show Welcome screen message")
+        }.padding()
+        
+        if showGreeting {
+            //here is where I am going to have the "favorites"
+            Text("Hello World")
+        }
         
       List{
         ForEach(destinations) { location in
