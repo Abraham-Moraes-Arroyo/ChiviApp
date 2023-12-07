@@ -138,24 +138,10 @@ struct Login: View {
     }// bottom of create users
     
     
-//    have the code here first
-//    this goes in the button
-//    let docref = fs.collection("Users").document((Auth.auth().currentUser?.uid.description)!)
-//    //Docref is refering to the current users document
-//    let favorites:[String] // favorites will always be empty with one item, but the firebase will treat them as an array
-//    favorites.append(Destination.name)//TODO COme back to this
-//    docRef.setData(["favorites": self.retrivedMealStrings], merge: true){ error in
-//        if let error = error {
-//            print("Error writing document: \(error)")
-//            
-//        } else {
-//            print("Document succesfully merged!")
-//        }
-//    }
     
 }// the absolute end
 
-//have the code here if the here first doesn't work
+
 
 
 struct Login_Preview: PreviewProvider{
