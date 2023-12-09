@@ -49,7 +49,7 @@ struct dynamictours: View {
             Text("In this route you will see")
                 .fontWeight(.heavy)
             Toggle(isOn: $favoriteisOn) {
-                /*@START_MENU_TOKEN@*/Text("Label")/*@END_MENU_TOKEN@*/
+                Text("Favorites")
             }
             .onChange(of: favoriteisOn) { boolState in
                 if boolState{ //if boolstate is true(favorite is toggled) do the following
@@ -114,6 +114,7 @@ struct dynamictours: View {
                     HStack{
                         Image(systemName: "star.fill").onTapGesture {
                             //The favorite code would go here
+                            .foregroundColor(.yellow)
                             let docref = fs.collection("Users").document(HARDCODEDUSERID)
                             
                             var favorites:[String] = []
@@ -122,12 +123,13 @@ struct dynamictours: View {
                                 if let error = error{
                                     print("error writing favorites")
                                 }else{
+                                    //Can I make it so I can remove the favorite here?
                                     print("document written")
                                 }
                                 
                             }
                                                                          
-                        }
+                        } //end of onTapGesture
                         Image(location.image)
                             .resizable()
                             .frame(width: 50, height: 50)
@@ -143,80 +145,6 @@ struct dynamictours: View {
                     
                 } // end of forEach
                 
-                
-                //                HStack{
-                //                    if (coolRestaurant.isFavorite){
-                //                        Image(systemName: "star.fill")
-                //                            .foregroundStyle(.yellow)
-                //                    }
-                //
-                //                    Image(systemName: "star.fill")
-                //                        .foregroundStyle(.yellow)
-                
-                //                    Image("chinatownmid")
-                //                        .resizable()
-                //                        .frame(width: 50, height: 50)
-                //                    NavigationLink(destination: ChinatownGate()) {
-                //                        Text("Chinatown Gate")
-                //
-                //                    }
-                //
-                
-                //this is the end of the button
-                //                }// end of chinatown Gate
-                //
-                //
-                //                HStack{
-                //                    Image("ninedragonmid")
-                //                        .resizable()
-                //                        .frame(width: 50, height: 50)
-                //                    NavigationLink(destination: Ninedragons()) {
-                //                        Text("Nine Dragons wall")
-                //
-                //                    }
-                //
-                //                }// end of chinatown Gate
-                
-                //
-                //
-                //                HStack{
-                //                    Image("chinazodiac")
-                //                        .resizable()
-                //                        .frame(width: 50, height: 50)
-                //                    NavigationLink(destination: squarezodiacs()) {
-                //                        Text("Chinatown Square Zodiacs")
-                //
-                //                    }
-                //
-                //                }// end of chinatown Gate
-                //
-                //
-                //
-                //                HStack{
-                //                    Image("beapla")
-                //                        .resizable()
-                //                        .frame(width: 50, height: 50)
-                //                    NavigationLink(destination: uareb()) {
-                //                        Text("You Are Beatiful Plaza")
-                //
-                //                    }
-                //
-                //                }// end of chinatown Gate
-                //
-                
-                
-                //                HStack{
-                //                    Image("chinamu")
-                //                        .resizable()
-                //                        .frame(width: 50, height: 50)
-                //                    NavigationLink(destination: chinesemuseum()) {
-                //                        Text("Chinese American Museum of Chicago")
-                //
-                //                    }
-                //
-                //                }// end of chinatown Gate
-                //
-                //
             }
         }.onAppear{
             
