@@ -8,12 +8,13 @@
 import Foundation
 import Firebase
 import FirebaseFirestore
+import SwiftUI
 
-class Destination:ObservableObject, Identifiable {
+class Destination: Identifiable {
     
     
     //data fields for firebase
-    @Published var name:String = ""
+    var name: String = ""
     
     @Published var image:String = ""
 
@@ -28,6 +29,8 @@ class Destination:ObservableObject, Identifiable {
     @Published var longitude:Double = 0.0
     
     @Published var latitude:Double = 0.0
+    
+    @Published var isFavorite: Color = .gray
     
     
     var dictionary:[String:Any] {
