@@ -136,6 +136,9 @@ struct dynamictours: View {
                                         
                                     }// add print statements to see where we are going to
                                 }// end of Task bracket
+                                
+                                
+                                
                                 //below is the end of the favorite bracket
                             } else {
                                 
@@ -146,6 +149,16 @@ struct dynamictours: View {
                                     let oldfavorites = try await docref.getDocument().data()
                                     var favorites:[String] = oldfavorites!["favorites"] as! [String]
                                     favorites.append(location.name)
+                                    
+                                    
+//                                    New Code From Devin 154
+                                    do{
+                                        try await docref.setData(["favorites":favorites],merge:true)
+                                      }catch{
+                                        print("\(error)")
+                                      }
+                                    
+                                    
                                     //for adding data
                                     docref.setData(["favorites":favorites],merge: true){ error in
                                         if let error = error{
