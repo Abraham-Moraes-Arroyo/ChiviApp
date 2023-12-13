@@ -19,18 +19,14 @@ struct ContentView: View {
             number2()
                 .tabItem {
                     Image(systemName: "map")
-                    Text("Map")
+                    Text("Guide")
                 }
             number3()
                  .tabItem {
                      Image(systemName: "mappin.circle.fill")
                      Text("Tours")
                  }
-            Number4()
-                 .tabItem {
-                     Image(systemName: "star")
-                     Text("Favorites")
-                 }
+      
         }
     }
 }
