@@ -5,7 +5,7 @@
 //  Created by Abraham Morales Arroyo on 11/15/23.
 //
 
-import SwiftUI 
+import SwiftUI
 import Foundation
 import FirebaseFirestore
 import FirebaseAuth
@@ -118,102 +118,102 @@ struct dynamictours: View {
                             //The favorite code would go here
                             //updating the star color to yellow
                             
-                                if favoriteisOn {
-                                    Task{
-                                        let docref = fs.collection("Users").document(HARDCODEDUSERID)
-                                        let oldfavorites = try await docref.getDocument().data()
-                                        var favorites:[String] = oldfavorites!["favorites"] as! [String]
-                                        let removeIndex = favorites.firstIndex(of: location.name)
-                                        favorites.remove(at: removeIndex!)
-                                        docref.setData(["favorites":favorites],merge: true){ error in
-                                            if let error = error{
-                                                print("error writing favorites")
-                                            }else{
-                                                //Can I make it so I can remove the favorite here?
-                                                print("document written")
-                                            }// end of else tag
-                                            
-                                        }// add print statements to see where we are going to
-                                    }// end of Task bracket
-                                    //below is the end of the favorite bracket
-                                } else {
-                                    
-                                    Task{
-                                        location.isFavorite = Color(.yellow)
-                                        print("starfill", starfill)
-                                        let docref = fs.collection("Users").document(HARDCODEDUSERID)
-                                        let oldfavorites = try await docref.getDocument().data()
-                                        var favorites:[String] = oldfavorites!["favorites"] as! [String]
-                                        favorites.append(location.name)
-                                        //for adding data
-                                        docref.setData(["favorites":favorites],merge: true){ error in
-                                            if let error = error{
-                                                print("error writing favorites")
-                                                // the if closing bracket is below
-                                            }else{
-                                                print("document written")
-                                            }// end of else statement
-                                            
-                                        }// end of error
-                                    }// end of Task
-                                    
-                                }// end of else bracket
+                            if favoriteisOn {
+                                Task{
+                                    let docref = fs.collection("Users").document(HARDCODEDUSERID)
+                                    let oldfavorites = try await docref.getDocument().data()
+                                    var favorites:[String] = oldfavorites!["favorites"] as! [String]
+                                    let removeIndex = favorites.firstIndex(of: location.name)
+                                    favorites.remove(at: removeIndex!)
+                                    docref.setData(["favorites":favorites],merge: true){ error in
+                                        if let error = error{
+                                            print("error writing favorites")
+                                        }else{
+                                            //Can I make it so I can remove the favorite here?
+                                            print("document written")
+                                        }// end of else tag
+                                        
+                                    }// add print statements to see where we are going to
+                                }// end of Task bracket
+                                //below is the end of the favorite bracket
+                            } else {
                                 
+                                Task{
+                                    location.isFavorite = Color(.yellow)
+                                    print("starfill", starfill)
+                                    let docref = fs.collection("Users").document(HARDCODEDUSERID)
+                                    let oldfavorites = try await docref.getDocument().data()
+                                    var favorites:[String] = oldfavorites!["favorites"] as! [String]
+                                    favorites.append(location.name)
+                                    //for adding data
+                                    docref.setData(["favorites":favorites],merge: true){ error in
+                                        if let error = error{
+                                            print("error writing favorites")
+                                            // the if closing bracket is below
+                                        }else{
+                                            print("document written")
+                                        }// end of else statement
+                                        
+                                    }// end of error
+                                }// end of Task
                                 
-                            } //end of onTapGesture
+                            }// end of else bracket
                             
-                            Image(location.image)
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                            NavigationLink(destination: DynamicLocationView(individualDestination: location)) {
-                                // for now we are going to have to lead them to Nine Dragons but later we will use that file as a template for the other invididual locations
-                                
-                                Text(location.name)
-                                
-                            }
                             
-                        }// end of chinatown Gate
+                        } //end of onTapGesture
                         
-                        
-                    } // end of forEach
-                    
-                }
-            }.onAppear{
-                
-                
-                Task{
-                    
-                    
-                    do{
-                        var tempDocuments: [Destination] = []
-                        
-                        let tourSnapShot = try await db.collection(tourId).getDocuments()
-                        
-                        for document in tourSnapShot.documents{
-                            let tempDestinationData = document.data()
+                        Image(location.image)
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                        NavigationLink(destination: DynamicLocationView(individualDestination: location)) {
+                            // for now we are going to have to lead them to Nine Dragons but later we will use that file as a template for the other invididual locations
                             
-                            let tempDestination = Destination(dictionary: tempDestinationData)
+                            Text(location.name)
                             
-                            tempDocuments.append(tempDestination)
-                            
-                            print("\(document.documentID) => \(document.data())") //Debug Statement
                         }
                         
-                        destinations = tempDocuments
+                    }// end of chinatown Gate
+                    
+                    
+                } // end of forEach
+                
+            }
+        }.onAppear{
+            
+            
+            Task{
+                
+                
+                do{
+                    var tempDocuments: [Destination] = []
+                    
+                    let tourSnapShot = try await db.collection(tourId).getDocuments()
+                    
+                    for document in tourSnapShot.documents{
+                        let tempDestinationData = document.data()
                         
-                    }catch{
-                        print("Error Caught While Converting POI References To Destinations \(error)")
+                        let tempDestination = Destination(dictionary: tempDestinationData)
+                        
+                        tempDocuments.append(tempDestination)
+                        
+                        print("\(document.documentID) => \(document.data())") //Debug Statement
                     }
                     
+                    destinations = tempDocuments
                     
-                    
+                }catch{
+                    print("Error Caught While Converting POI References To Destinations \(error)")
                 }
+                
+                
+                
             }
         }
     }
+}
 
-    
-    #Preview {
-        dynamictours(tourId: "china-town-tour").environmentObject(DataModels())
-    }
+
+#Preview {
+    dynamictours(tourId: "china-town-tour").environmentObject(DataModels())
+}
 
