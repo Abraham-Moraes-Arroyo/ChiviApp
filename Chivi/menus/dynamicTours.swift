@@ -131,10 +131,11 @@ struct dynamictours: View {
                                             }else{
                                                 //Can I make it so I can remove the favorite here?
                                                 print("document written")
-                                            }
+                                            }// end of else tag
                                             
                                         }// add print statements to see where we are going to
-                                    }
+                                    }// end of Task bracket
+                                    //below is the end of the favorite bracket
                                 } else {
                                     
                                     Task{
@@ -148,15 +149,15 @@ struct dynamictours: View {
                                         docref.setData(["favorites":favorites],merge: true){ error in
                                             if let error = error{
                                                 print("error writing favorites")
+                                                // the if closing bracket is below
                                             }else{
-                                                //Can I make it so I can remove the favorite here?
                                                 print("document written")
-                                            }
+                                            }// end of else statement
                                             
-                                        }
-                                    }
+                                        }// end of error
+                                    }// end of Task
                                     
-                                }
+                                }// end of else bracket
                                 
                                 
                             } //end of onTapGesture
