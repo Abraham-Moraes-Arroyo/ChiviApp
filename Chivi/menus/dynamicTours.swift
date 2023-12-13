@@ -124,6 +124,7 @@ struct dynamictours: View {
                                     let oldfavorites = try await docref.getDocument().data()
                                     var favorites:[String] = oldfavorites!["favorites"] as! [String]
                                     let removeIndex = favorites.firstIndex(of: location.name)
+//                                    An error Happens down here mentions something along the lines of unwrapping. 
                                     favorites.remove(at: removeIndex!)
                                     docref.setData(["favorites":favorites],merge: true){ error in
                                         if let error = error{

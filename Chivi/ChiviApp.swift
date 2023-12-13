@@ -13,6 +13,10 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     FirebaseApp.configure()
 
+      
+//      here is where I have changed the time that the logo will appear when first running the app
+//      the tutorial for that is here https://www.youtube.com/watch?v=sYb9drd9Xdk 
+      Thread.sleep(forTimeInterval: 3)
     return true
   }
 }
