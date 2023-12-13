@@ -5,7 +5,7 @@
 //  Created by Abraham Morales Arroyo on 11/15/23.
 //
 
-import SwiftUI
+import SwiftUI 
 import Foundation
 import FirebaseFirestore
 import FirebaseAuth
