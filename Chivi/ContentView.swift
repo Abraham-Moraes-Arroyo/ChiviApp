@@ -16,16 +16,17 @@ struct ContentView: View {
                     Image(systemName: "house.fill")
                     Text("Home")
                 }
-            number2()
-                .tabItem {
-                    Image(systemName: "map")
-                    Text("Guide")
-                }
             number3()
                  .tabItem {
                      Image(systemName: "mappin.circle.fill")
                      Text("Tours")
                  }
+            number2()
+                .tabItem {
+                    Image(systemName: "map")
+                    Text("Guide")
+                }
+           
       
         }
     }

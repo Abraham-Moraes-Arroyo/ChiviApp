@@ -138,6 +138,9 @@ struct dynamictours: View {
                                 }// end of Task bracket
                                 
                                 
+                                // +10 Stops
+                                
+                                
                                 
                                 //below is the end of the favorite bracket
                             } else {
