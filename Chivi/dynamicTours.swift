@@ -35,7 +35,7 @@ struct dynamictours: View {
     
     @State private var destinations: [Destination] = []
     
-    @State private var favoriteisOn:Bool = true
+    @State private var favoriteisOn:Bool = false
     let HARDCODEDUSERID = "nlag0HjwwvbLVt48xBz4lR6MUE72"
     // you will have to use the auth.auth to get users new id
     
@@ -71,21 +71,30 @@ struct dynamictours: View {
                             //whole line of code gets the users doc from firebase and gets its data as a dictionary
                             let favoritesData:[String:Any] = try await db.collection("Users").document(HARDCODEDUSERID).getDocument().data()! //force data to unwrap (will be null if failed)
                             
-                            let userFavorites:[String] = favoritesData["favorites"] as! [String]
+                            let userFavorites:[String] = favoritesData["favorites"] as? [String] ?? [""]
                             
                             //Modified Query to only return documents thats names match the ones in favorites
                             //ArrayContains can return items that match with at least 30 items, so theres a search limit, but 30 should be line
-                            let favoriteToursSnapShot = try await db.collection(tourId).whereField("name", in: userFavorites).getDocuments()
+                            //                            let favoriteToursSnapShot = try await db.collection(tourId).whereField("name", in: userFavorites).getDocuments()
                             
-                            for document in favoriteToursSnapShot.documents{
-                                let tempDestinationData = document.data()
+                            if !userFavorites.isEmpty{
+                                let favoriteToursSnapShot = try await db.collection(tourId).whereField("name", in: userFavorites).getDocuments()
                                 
-                                let tempDestination = Destination(dictionary: tempDestinationData)
                                 
-                                tempFavoriteDocuments.append(tempDestination)
                                 
-                                print("\(document.documentID) => \(document.data())") //Debug Statement
-                            }
+                                for document in favoriteToursSnapShot.documents{
+                                    let tempDestinationData = document.data()
+                                    
+                                    let tempDestination = Destination(dictionary: tempDestinationData)
+                                    
+                                    tempFavoriteDocuments.append(tempDestination)
+                                    
+                                    print("\(document.documentID) => \(document.data())") //Debug Statement
+                                }
+                                
+                            }// Else ignore it and just retrun an empty favorites
+                            
+                            
                             
                             destinations = tempFavoriteDocuments
                             
@@ -103,6 +112,11 @@ struct dynamictours: View {
                     
                 }//bottom bool state true
                 //have the else statement here. to get out of the label toggle
+                else{
+                    Task{
+                        await fetchDestinations()
+                    }
+                }
                 
             }
             List{
@@ -119,12 +133,15 @@ struct dynamictours: View {
                             //updating the star color to yellow
                             
                             if favoriteisOn {
+                                
+                                
+                                
                                 Task{
                                     let docref = fs.collection("Users").document(HARDCODEDUSERID)
                                     let oldfavorites = try await docref.getDocument().data()
                                     var favorites:[String] = oldfavorites!["favorites"] as! [String]
                                     let removeIndex = favorites.firstIndex(of: location.name)
-//                                    An error Happens down here mentions something along the lines of unwrapping. 
+                                    //                                    An error Happens down here mentions something along the lines of unwrapping.
                                     favorites.remove(at: removeIndex!)
                                     docref.setData(["favorites":favorites],merge: true){ error in
                                         if let error = error{
@@ -154,12 +171,12 @@ struct dynamictours: View {
                                     favorites.append(location.name)
                                     
                                     
-//                                    New Code From Devin 154
+                                    //                                    New Code From Devin 154
                                     do{
                                         try await docref.setData(["favorites":favorites],merge:true)
-                                      }catch{
+                                    }catch{
                                         print("\(error)")
-                                      }
+                                    }
                                     
                                     
                                     //for adding data
@@ -200,7 +217,12 @@ struct dynamictours: View {
             
             Task{
                 
+                await fetchDestinations()
+            }
+        }
+    }
                 
+    func fetchDestinations() async{
                 do{
                     var tempDocuments: [Destination] = []
                     
@@ -224,10 +246,10 @@ struct dynamictours: View {
                 
                 
                 
-            }
-        }
     }
 }
+    
+
 
 
 #Preview {
