@@ -53,6 +53,10 @@ class Destination: Identifiable {
         
         self.init(name: "", description: "", image: "", longitude: 0.0, latitude: 0.0, directions: "")
         
+//It looked originally like this
+        
+//        self.init(name: "", description: "", image: "", longitude: 0.0, latitude: 0.0, directions: "")
+        
         
     }
     
@@ -63,8 +67,8 @@ class Destination: Identifiable {
         let directions = dictionary["directions"] as! String? ?? ""
 
         let image = dictionary["image"] as! String? ?? ""
-        let longitude = dictionary["longitude"] as! Double? ?? 0.0
-        let latitude = dictionary["latitude"] as! Double? ?? 0.0
+        let longitude = dictionary["long"] as! Double? ?? 0.0
+        let latitude = dictionary["lat"] as! Double? ?? 0.0
         
         
 

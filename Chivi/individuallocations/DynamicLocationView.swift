@@ -6,8 +6,8 @@ struct DynamicLocationView: View {
   var individualDestination:Destination
   var body: some View {
     let tower = CLLocationCoordinate2D(
-      latitude: 41.852652,
-    longitude: -87.632226)
+      latitude: individualDestination.latitude,
+    longitude: individualDestination.longitude)
       ScrollView{
         VStack{
           Map(){
@@ -43,8 +43,8 @@ struct DynamicLocationView: View {
             Text(individualDestination.description)
             Text("")
             Button("Go", action:{
-              let latitude = 41.852652
-              let longitude = -87.632226
+              let latitude = individualDestination.latitude
+              let longitude = (individualDestination.longitude)
               let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
               if UIApplication.shared.canOpenURL(url!) {
                 UIApplication.shared.open(url!, options: [:], completionHandler: nil)
