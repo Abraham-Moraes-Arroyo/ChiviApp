@@ -10,9 +10,10 @@ import SwiftUI
 struct number1: View {
     var body: some View {
         NavigationView{
-            VStack(alignment: .center){
-                //            this is the title
-                VStack{
+            ScrollView{
+                VStack(alignment: .center){
+                    //            this is the title
+                    VStack{
                         Image("chivi")
                             .resizable()
                             .aspectRatio(contentMode:.fit)
@@ -21,7 +22,7 @@ struct number1: View {
                         Text("Gettting Started")
                             .font(.headline)
                             .offset(y: -150)
-                    // what is the CTA navigationLink
+                        // what is the CTA navigationLink
                         NavigationLink(destination: number2()) {
                             Text("What is the CTA?")
                                 .foregroundColor(.white)
@@ -32,8 +33,8 @@ struct number1: View {
                                         .frame(width: 350, height: 60)
                                 )
                         }
-                            .offset(y: -100)
-                    // what is the how to Use Chivi navigationLink
+                        .offset(y: -100)
+                        // what is the how to Use Chivi navigationLink
                         NavigationLink(destination: howToUseChivi()) {
                             Text("How to use Chivi?")
                                 .foregroundColor(.white)
@@ -44,7 +45,7 @@ struct number1: View {
                                         .frame(width: 350, height: 60)
                                 )
                         }
-                            .offset(y: -50)
+                        .offset(y: -50)
                     }
                     // end of VStack for the top of home screen
                     VStack{
@@ -54,7 +55,7 @@ struct number1: View {
                             // the reason why it is not dynamic because we don't expect for train lines to actually disapear overnight, or get created unlike the different tour stops
                             
                             HStack{
-                              
+                                
                                 Image("redline")
                                     .resizable()
                                     .frame(width: 50, height: 50)
@@ -62,7 +63,7 @@ struct number1: View {
                                     Text("Red Line")
                                     
                                 }
-                           
+                                
                                 
                                 //this is the end of the button
                             }// end of chinatown Gate
@@ -71,12 +72,12 @@ struct number1: View {
                         }// end of list
                         
                         
-                        //move guides to the end and call it help 
+                        //move guides to the end and call it help
                         
-                       
+                        
+                    }
+                    
                 }
-                
-               
                 
             }// end of Vstack
         } // end of navigation View
