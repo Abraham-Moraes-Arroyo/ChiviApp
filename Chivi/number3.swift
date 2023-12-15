@@ -27,9 +27,15 @@ struct number3: View {
     var body: some View {
         NavigationView{
   
-            VStack{
+            VStack(spacing: 0){
+        
                 Text("Tour De Chicago")
-                
+                    .foregroundColor(.white)
+                    .frame( maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .padding(.top, 20)
+                    .padding(.bottom, 20)
+                    .background(Color(red: 0.5, green: 0.3, blue: 1))
+                    
                 List{
 
                     HStack{
@@ -42,7 +48,9 @@ struct number3: View {
                             
                             
                         }
-                    }// end of chinatown
+                    }
+
+                    // end of chinatown
                     HStack{
                         Image("berlin")
                             .resizable()
@@ -70,6 +78,7 @@ struct number3: View {
                     }// end of blueline
 //                    agora
 //                    41.868123, -87.623380
+                    
               
 
                 } // end of List
@@ -94,6 +103,8 @@ struct number3: View {
             
        
         }
+        .foregroundColor(Color(red: 0.5, green: 0.3, blue: 1))
+        .ignoresSafeArea(edges: .top)
     }// end of body
 }
 

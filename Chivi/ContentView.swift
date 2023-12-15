@@ -24,7 +24,7 @@ struct ContentView: View {
             number2()
                 .tabItem {
                     Image(systemName: "map")
-                    Text("Guide")
+                    Text("Help")
                 }
            
       

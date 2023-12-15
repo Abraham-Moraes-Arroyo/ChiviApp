@@ -10,19 +10,44 @@ import SwiftUI
 struct number1: View {
     var body: some View {
         NavigationView{
-            VStack(alignment: .leading){
+            VStack(alignment: .center){
                 //            this is the title
-                
-                    HStack{
+                VStack{
                         Image("chivi")
                             .resizable()
-                            .scaledToFit()
-                        
+                            .aspectRatio(contentMode:.fit)
+                            .frame(width: 300, height: 300)
+                            .offset(y: -80)
+                        Text("Gettting Started")
+                            .font(.headline)
+                            .offset(y: -150)
+                    // what is the CTA navigationLink
+                        NavigationLink(destination: number2()) {
+                            Text("What is the CTA?")
+                                .foregroundColor(.white)
+                                .font(.headline)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 20)
+                                        .foregroundColor(Color(red: 0.5, green: 0.3, blue: 1))
+                                        .frame(width: 350, height: 60)
+                                )
+                        }
+                            .offset(y: -100)
+                    // what is the how to Use Chivi navigationLink
+                        NavigationLink(destination: howToUseChivi()) {
+                            Text("How to use Chivi?")
+                                .foregroundColor(.white)
+                                .font(.headline)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 20)
+                                        .foregroundColor(Color(red: 0.5, green: 0.3, blue: 1))
+                                        .frame(width: 350, height: 60)
+                                )
+                        }
+                            .offset(y: -50)
                     }
-                    
-                    
+                    // end of VStack for the top of home screen
                     VStack{
-                        
                         Text("The L")
                         List{
                             // here is where you are going to have different train lines.
