@@ -49,6 +49,8 @@ struct number3: View {
                             
                         }
                     }
+                    .listRowBackground(Color.red)
+                    .foregroundColor(.white)
 
                     // end of chinatown
                     HStack{
@@ -64,6 +66,8 @@ struct number3: View {
                             
                         }
                     }// end of berlinwall
+                    .listRowBackground(Color.brown)
+                    .foregroundColor(.white)
                     
 //                    mythicalblueline
                     HStack{
@@ -78,12 +82,17 @@ struct number3: View {
                     }// end of blueline
 //                    agora
 //                    41.868123, -87.623380
+                    .listRowBackground(Color.blue)
+                    .foregroundColor(.white)
+
                     
               
-
+                    
                 } // end of List
+                
                 VStack{
                     Text("More Extensive")
+                        .padding()
                     List{
                         HStack{
                             Image("polishtriangle")
@@ -93,13 +102,22 @@ struct number3: View {
                                 Text("Fontaine BlueLine")
                             }
                         }// end of chinatown
+//                        .listRowBackground(Color(red:0.6, green:1, blue:0.5))
                         
+//                        .listRowBackground(LinearGradient(gradient: Gradient(colors: [Color(red: 0.5, green: 0.3, blue: 1), .white]), startPoint: .topLeading, endPoint: .bottomTrailing)
+//)
+                        .listRowBackground(AngularGradient(gradient: Gradient(colors: [.red, .yellow, .green, .blue, .purple, .red]), center: .center))
+                        
+                        .foregroundColor(.black)
+        
                         
                         
                     }
                 }
                 
             }// end of Vstack
+            .background(Color(red: 0.5, green: 0.3, blue: 1))
+            .foregroundColor(.white)
             
        
         }

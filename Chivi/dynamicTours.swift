@@ -51,6 +51,7 @@ struct dynamictours: View {
             Toggle(isOn: $favoriteisOn) {
                 Text("Favorites")
             }
+            .padding()
             .onChange(of: favoriteisOn) { boolState in
                 if boolState{ //if boolstate is true(favorite is toggled) do the following
                     
@@ -212,6 +213,7 @@ struct dynamictours: View {
                 } // end of forEach
                 
             }
+            .listRowBackground(Color.blue)
         }.onAppear{
             
             

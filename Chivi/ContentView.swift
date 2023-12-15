@@ -18,12 +18,12 @@ struct ContentView: View {
                 }
             number3()
                  .tabItem {
-                     Image(systemName: "mappin.circle.fill")
+                     Image(systemName: "map")
                      Text("Tours")
                  }
             number2()
                 .tabItem {
-                    Image(systemName: "map")
+                    Image(systemName: "info.circle")
                     Text("Help")
                 }
            
