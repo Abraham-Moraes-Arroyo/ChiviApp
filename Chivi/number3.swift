@@ -106,9 +106,9 @@ struct number3: View {
                         
 //                        .listRowBackground(LinearGradient(gradient: Gradient(colors: [Color(red: 0.5, green: 0.3, blue: 1), .white]), startPoint: .topLeading, endPoint: .bottomTrailing)
 //)
-                        .listRowBackground(AngularGradient(gradient: Gradient(colors: [.red, .yellow, .green, .blue, .purple, .red]), center: .center))
+                        .listRowBackground(AngularGradient(gradient: Gradient(colors: [Color(red: 0.2, green: 0, blue: 0.7), Color(red: 0.5, green: 0.3, blue: 1),Color(red: 0.2, green: 0, blue: 0.7), Color(red: 0.5, green: 0.3, blue: 1),Color(red: 0.2, green: 0, blue: 0.7)]), center: .center))
                         
-                        .foregroundColor(.black)
+                        .foregroundColor(.white)
         
                         
                         
