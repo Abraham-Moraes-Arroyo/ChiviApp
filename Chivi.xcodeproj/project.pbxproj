@@ -59,6 +59,7 @@
 		85F4CDA72B1AAC2800CB820F /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F4CDA62B1AAC2800CB820F /* DataModels.swift */; };
 		85F4CDA92B1AAE1B00CB820F /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F4CDA82B1AAE1B00CB820F /* Destination.swift */; };
 		AFEDC0922B2CA01200146D7B /* howToUseChivi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEDC0912B2CA01200146D7B /* howToUseChivi.swift */; };
+		B921E02E2B2D7E2B00C3E3A2 /* whatIsCTA.swift in Sources */ = {isa = PBXBuildFile; fileRef = B921E02D2B2D7E2B00C3E3A2 /* whatIsCTA.swift */; };
 		B9882B1E2B155DE5007709E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9882B1D2B155DE5007709E3 /* GoogleService-Info.plist */; };
 		B9882B212B155EA3007709E3 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B9882B202B155EA3007709E3 /* FirebaseAnalytics */; };
 		B9882B232B155EA3007709E3 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = B9882B222B155EA3007709E3 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -162,6 +163,7 @@
 		85F4CDA62B1AAC2800CB820F /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 		85F4CDA82B1AAE1B00CB820F /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		AFEDC0912B2CA01200146D7B /* howToUseChivi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = howToUseChivi.swift; sourceTree = "<group>"; };
+		B921E02D2B2D7E2B00C3E3A2 /* whatIsCTA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatIsCTA.swift; sourceTree = "<group>"; };
 		B9882B1D2B155DE5007709E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -305,6 +307,7 @@
 				85DBDE722AE42E3600DB5763 /* ContentView.swift */,
 				85DBDE9A2AE42E4900DB5763 /* number1.swift */,
 				AFEDC0912B2CA01200146D7B /* howToUseChivi.swift */,
+				B921E02D2B2D7E2B00C3E3A2 /* whatIsCTA.swift */,
 				85DBDE9C2AE42E4F00DB5763 /* number2.swift */,
 				85DBDE9E2AE42E5700DB5763 /* number3.swift */,
 				85DBDEA02AE42E6A00DB5763 /* Number4.swift */,
@@ -534,6 +537,7 @@
 				8545ADD22B213A600050C95D /* Login.swift in Sources */,
 				85F4CDA52B1AA7F500CB820F /* dynamicTours.swift in Sources */,
 				85F4CDA92B1AAE1B00CB820F /* Destination.swift in Sources */,
+				B921E02E2B2D7E2B00C3E3A2 /* whatIsCTA.swift in Sources */,
 				854596D92B125CC3006DCF8F /* josephf.swift in Sources */,
 				858779262B10ED2B002D6CCC /* uareb.swift in Sources */,
 				85DBDEA12AE42E6A00DB5763 /* Number4.swift in Sources */,

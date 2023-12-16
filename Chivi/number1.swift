@@ -23,7 +23,7 @@ struct number1: View {
                             .font(.headline)
                             .offset(y: -150)
                         // what is the CTA navigationLink
-                        NavigationLink(destination: number2()) {
+                        NavigationLink(destination: whatIsCTA()) {
                             Text("What is the CTA?")
                                 .foregroundColor(.white)
                                 .font(.headline)
