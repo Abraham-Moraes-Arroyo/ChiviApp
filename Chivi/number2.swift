@@ -16,6 +16,7 @@ struct number2: View {
                 Text("Getting Around")
                     .offset(y:-100)
                     .font(.title)
+                    
 
                 VStack{
                     // here is where the hyperlinks to the different screens are going to be

@@ -45,17 +45,37 @@ struct purchasing: View {
                 Text("Purchasing Ventra Cards")
                 //                .font(.headline)
                     .font(.title )
+                    .padding()
+                    .foregroundColor(.white)
 //                    .offset(y:-140)
+                    .background(Color.purple)
+                    .cornerRadius(20)
                 
                 Image("ventramac")
+                    .renderingMode(.original)
                     .resizable()
-                    .frame(width: 300, height: 200)
+                    .cornerRadius(20)
+                    .aspectRatio(contentMode:.fit)
+                    .frame(width:280, height:200, alignment: .center)
+
+                    .background(
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundColor(Color(red: 0.8, green: 0.8, blue: 0.8))
+                            .frame(width: 310, height: 160, alignment: .center)
+                    )
                 
                 
             } // end of Vstack
             
             VStack{
                 Text("Ventra Vending Machines (VVMs) are available at all 'L' (train) stations but also at Pharmacy stores (Jewels, CVS, Walmarts)")
+                    .font(.system(size: 15, design: .default))
+                    .minimumScaleFactor(0.1)
+                    .foregroundColor(.white)
+                    .padding()
+//                    .offset(y:-140)
+                    .background(Color.purple)
+                    .cornerRadius(20)
                 
                 
             }// end of Vstack
@@ -64,8 +84,13 @@ struct purchasing: View {
             
             Text("Adding A virtual Ventra Card")
                 .font(.title)
-//            YoutubeVideoView(youtubeVideoID: "xk6HcGUXZ_w")
-//                .scaledToFit()
+                .font(.title )
+                .padding()
+                .foregroundColor(.white)
+                .background(Color.purple)
+                .cornerRadius(20)
+                .offset(y:-50)
+
 
             let link = "[Tutorial](https://www.youtube.com/embed/xk6HcGUXZ_w)"
             Text(.init(link))
