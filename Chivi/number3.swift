@@ -91,7 +91,7 @@ struct number3: View {
                 } // end of List
                 
                 VStack{
-                    Text("More Extensive")
+                    Text("More Extensive (10+ stops)")
                         .padding()
                     List{
                         HStack{
