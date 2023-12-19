@@ -32,11 +32,13 @@ struct number1: View {
                                         .foregroundColor(Color(red: 0.5, green: 0.3, blue: 1))
                                         .frame(width: 350, height: 60)
                                 )
+                                
                         }
                         .offset(y: -100)
                         // what is the how to Use Chivi navigationLink
                         NavigationLink(destination: howToUseChivi()) {
                             Text("How to use Chivi?")
+                                
                                 .foregroundColor(.white)
                                 .font(.headline)
                                 .background(
@@ -44,13 +46,15 @@ struct number1: View {
                                         .foregroundColor(Color(red: 0.5, green: 0.3, blue: 1))
                                         .frame(width: 350, height: 60)
                                 )
+                                
                         }
                         .offset(y: -50)
+                        
                     }
                     // end of VStack for the top of home screen
                     
                 }
-                
+                .offset(y:150)
             }// end of Vstack
         } // end of navigation View
     }

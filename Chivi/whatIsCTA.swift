@@ -11,11 +11,14 @@ struct whatIsCTA: View {
     var body: some View {
         ScrollView{
             VStack(alignment:.center){
-                Image("chivi")
+                Image("CHIVICROPPED")
                     .renderingMode(.original)
                     .resizable()
                     .aspectRatio(contentMode:.fit)
-                    .frame(width: 300, height: 200, alignment: .center)
+                    .padding(.bottom,50)
+                    .frame(width: 200, alignment: .center)
+//                    .background(Color(red: 0.1, green: 0.7, blue: 0.9))
+                    .cornerRadius(20)
                 Text("CTA GRID SYSTEM")
                     .minimumScaleFactor(0.1)
                     .font(.system(size: 30, weight: .bold, design: .default))
@@ -47,13 +50,17 @@ struct whatIsCTA: View {
                 //                    .frame(minWidth:100)
                 //                    .frame(width:300, height: 100, alignment: .center)
                 
+                Divider()
+                    .overlay(Color.blue)
+                    .padding(.top, 10)
+                
                 Image("CTANEWTRAIN")
                     
                     .renderingMode(.original)
                     .resizable()
                     .cornerRadius(25)
                     .aspectRatio(contentMode:.fit)
-                    .frame(width: 280, height:260, alignment: .center)
+                    .frame(width: 280, height:250, alignment: .center)
                     .background(
                         RoundedRectangle(cornerRadius: 20)
                             .foregroundColor(Color(red: 0.8, green: 0.8, blue: 0.8))
@@ -76,12 +83,40 @@ struct whatIsCTA: View {
                     .background(Color(red: 0.6, green: 0.4, blue: 1))
                     .cornerRadius(15)
                 
+                Image("LGUIDE")
+                    .renderingMode(.original)
+                    .resizable()
+                    .cornerRadius(25)
+                    .aspectRatio(contentMode:.fit)
+                    .frame(width: 280, height:220, alignment: .center)
+                    .background(
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundColor(Color(red: 0.8, green: 0.8, blue: 0.8))
+                            .frame(width: 310, height: 210, alignment: .center)
+                    )
+                
+                Link("Train Tutorial!", destination: URL(string: "https://www.youtube.com/watch?v=PIUFbPNh-tE")!)
+                    .minimumScaleFactor(0.1)
+                    .foregroundColor(.white)
+                    .padding()
+                    .cornerRadius(20)
+                    .background(
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundColor(Color(red: 0.6, green: 0.4, blue: 1))
+                    )
+                    .frame(width: 100, height: 100, alignment: .center)
+                    
+                
+                Divider()
+                    .overlay(Color.blue)
+                    .padding(.top, 10)
+                
                 Image("CTAMAPLOOP")
                     .renderingMode(.original)
                     .resizable()
                     .cornerRadius(25)
                     .aspectRatio(contentMode:.fit)
-                    .frame(width: 250, height:400, alignment: .center)
+                    .frame(width: 250, height:380, alignment: .center)
                     .cornerRadius(20)
                     .background(
                         RoundedRectangle(cornerRadius: 20)
@@ -96,6 +131,11 @@ struct whatIsCTA: View {
                     .padding(10)
                     .background(Color(red: 0.6, green: 0.4, blue: 1))
                     .cornerRadius(15)
+                
+                Divider()
+                    .overlay(Color.blue)
+                    .padding(.top, 20)
+                    .padding(.bottom, 10)
                 
                 Image("CTAMAPBUS")
                     .renderingMode(.original)
@@ -150,7 +190,7 @@ struct whatIsCTA: View {
                             .frame(width: 310, height: 210, alignment: .center)
                     )
                 
-                Link("Learn to take the Bus!", destination: URL(string: "https://www.youtube.com/watch?v=bb4JRvkp1FQ")!)
+                Link("Bus Tutorial!", destination: URL(string: "https://www.youtube.com/watch?v=bb4JRvkp1FQ")!)
                     .minimumScaleFactor(0.1)
                     .foregroundColor(.white)
                     .padding()
@@ -161,7 +201,6 @@ struct whatIsCTA: View {
                     .frame(width: 100, height: 100, alignment: .center)
                 
                 
-                    
             }
             .padding(30)
         }

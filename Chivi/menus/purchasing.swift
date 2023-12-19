@@ -42,13 +42,20 @@ struct purchasing: View {
     var body: some View {
         ScrollView{
             VStack{
+                Image("CHIVICROPPED")
+                    .renderingMode(.original)
+                    .resizable()
+                    .aspectRatio(contentMode:.fit)
+                    .padding(.top,20)
+                    .padding(.bottom,40)
+                    .frame(width: 200, alignment: .center)
+//                    .background(Color(red: 0.1, green: 0.7, blue: 0.9))
+                    .cornerRadius(20)
                 Text("Purchasing Ventra Cards")
-                //                .font(.headline)
                     .font(.title )
                     .padding()
                     .foregroundColor(.white)
-//                    .offset(y:-140)
-                    .background(Color.purple)
+                    .background(Color(red: 0.6, green: 0.4, blue: 1))
                     .cornerRadius(20)
                 
                 Image("ventramac")
@@ -56,8 +63,8 @@ struct purchasing: View {
                     .resizable()
                     .cornerRadius(20)
                     .aspectRatio(contentMode:.fit)
-                    .frame(width:280, height:200, alignment: .center)
-
+                    .frame(width:280, height:170, alignment: .center)
+                
                     .background(
                         RoundedRectangle(cornerRadius: 20)
                             .foregroundColor(Color(red: 0.8, green: 0.8, blue: 0.8))
@@ -65,37 +72,71 @@ struct purchasing: View {
                     )
                 
                 
-            } // end of Vstack
-            
-            VStack{
-                Text("Ventra Vending Machines (VVMs) are available at all 'L' (train) stations but also at Pharmacy stores (Jewels, CVS, Walmarts)")
+                
+                Text("Ventra Vending Machines (VVMs) are available at all 'L' (train) stations but also at Pharmacy stores (Jewels, CVS, Walmarts.)")
                     .font(.system(size: 15, design: .default))
                     .minimumScaleFactor(0.1)
                     .foregroundColor(.white)
                     .padding()
-//                    .offset(y:-140)
-                    .background(Color.purple)
+                    .background(Color(red: 0.6, green: 0.4, blue: 1))
                     .cornerRadius(20)
                 
                 
-            }// end of Vstack
-            .frame(width: 300)
-            
-            
-            Text("Adding A virtual Ventra Card")
-                .font(.title)
-                .font(.title )
-                .padding()
-                .foregroundColor(.white)
-                .background(Color.purple)
-                .cornerRadius(20)
-                .offset(y:-50)
-
-
-            let link = "[Tutorial](https://www.youtube.com/embed/xk6HcGUXZ_w)"
-            Text(.init(link))
-             
-            
+                
+                    .frame(width: 300)
+                
+                
+                Divider()
+                    .overlay(.blue)
+                    .padding()
+                    
+                
+                
+                Text("Adding A Ventra to Your Phone")
+                    .font(.title)
+                    .font(.title )
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(Color(red: 0.6, green: 0.4, blue: 1))
+                    .cornerRadius(20)
+//                    .offset(y:20)
+                
+                
+                Image("VENTRAWALLET")
+                    .renderingMode(.original)
+                    .resizable()
+                    .cornerRadius(20)
+                    .aspectRatio(contentMode:.fit)
+                    .frame(width:280, height:190, alignment: .center)
+                
+                    .background(
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundColor(Color(red: 0.8, green: 0.8, blue: 0.8))
+                            .frame(width: 310, height: 185, alignment: .center)
+                    )
+                
+                Text("Here is a simple tutorial on how to add a ventra to your iPhone, making it easily accessible through your phone.")
+                    .font(.system(size: 15, design: .default))
+                    .minimumScaleFactor(0.1)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color(red: 0.6, green: 0.4, blue: 1))
+                    .cornerRadius(20)
+                
+                //            let link = "[Tutorial](https://www.youtube.com/embed/xk6HcGUXZ_w)"
+                //            Text(.init(link))
+                Link("Tutorial!", destination: URL(string: "https://www.youtube.com/embed/xk6HcGUXZ_w")!)
+                    .minimumScaleFactor(0.1)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundColor(Color(red: 0.6, green: 0.4, blue: 1))
+                    )
+                    .frame(width: 100, height: 60, alignment: .center)
+                
+            }// end of VStack
+            .padding(30)
         }// end of Scrollview
         
     }// end of Body
