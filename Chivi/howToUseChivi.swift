@@ -12,21 +12,21 @@ struct howToUseChivi: View {
     ZStack{
       //Changing Between Views
       if currentPage == 1{
-        ExtractedView(image: "learnAndGo", title: "Learn & Go", detail: "Read up on the significance of the locations and press go to get directions", bgColor: Color(red: 0.863, green: 0.816, blue: 1))
-          .transition(.scale)
-      }
-      if currentPage == 2{
-        ExtractedView(image: "howto3", title: "Favorites", detail: "Star your favorite locations in Chicago", bgColor: Color(red: 0.863, green: 0.816, blue: 1))
-          .transition(.scale)
-      }
-      if currentPage == 3{
         ExtractedView(image: "chooseATour1", title: "Choose A Tour", detail: "Chivi provides you with tours to explore Chicago", bgColor: Color(red: 0.863, green: 0.816, blue: 1))
           .transition(.scale)
       }
-      if currentPage == 4{
+      if currentPage == 2{
         ExtractedView(image: "chooseALocation", title: "Choose A Location", detail: "Choose which locations to visit on your route from top to bottom", bgColor: Color(red: 0.863, green: 0.816, blue: 1))
           .transition(.scale)
       }
+        if currentPage == 3{
+          ExtractedView(image: "learnAndGo", title: "Learn & Go", detail: "Read up on the significance of the locations and press go to get directions", bgColor: Color(red: 0.863, green: 0.816, blue: 1))
+            .transition(.scale)
+        }
+        if currentPage == 4{
+          ExtractedView(image: "howto3", title: "Favorites", detail: "Star your favorite locations in Chicago", bgColor: Color(red: 0.863, green: 0.816, blue: 1))
+            .transition(.scale)
+        }
     }
     .overlay (
       //Button
