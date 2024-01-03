@@ -84,6 +84,23 @@ struct number3: View {
 //                    41.868123, -87.623380
                     .listRowBackground(Color.blue)
                     .foregroundColor(.white)
+                    
+                    
+                    //                    LSD
+                                        HStack{
+                                            Image("ql")
+                                                .resizable()
+                                                .frame(width: 50, height: 50)
+                                            NavigationLink(destination: dynamictours(tourId: "mythicalblueline")){
+                                                Text("Lake Shore Drive Tour")
+                                                
+                                                
+                                            }
+                                        }// end of blueline
+                    //                    agora
+                    //                    41.868123, -87.623380
+                                        .listRowBackground(Color.blue)
+                                        .foregroundColor(.white)
 
                     
               
