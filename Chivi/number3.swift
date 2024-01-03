@@ -91,7 +91,7 @@ struct number3: View {
                                             Image("ql")
                                                 .resizable()
                                                 .frame(width: 50, height: 50)
-                                            NavigationLink(destination: dynamictours(tourId: "mythicalblueline")){
+                                            NavigationLink(destination: dynamictours(tourId: "LSD")){
                                                 Text("Lake Shore Drive Tour")
                                                 
                                                 
