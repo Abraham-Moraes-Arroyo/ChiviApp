@@ -17,14 +17,10 @@ class Destination: Identifiable {
     var name: String = ""
     
     @Published var image:String = ""
-
     
     @Published var directions:String = ""
     
     @Published var description:String = ""
-    
-    
-    
     
     @Published var longitude:Double = 0.0
     
@@ -36,7 +32,6 @@ class Destination: Identifiable {
     var dictionary:[String:Any] {
         return ["name":name, "description":description, "image":image, "long":longitude, "lat": latitude, "directions":directions]
     }
-    
     
     init(name: String, description: String, image: String, longitude: Double, latitude: Double, directions:String) {
         self.name = name
@@ -52,11 +47,6 @@ class Destination: Identifiable {
     convenience init () {
         
         self.init(name: "", description: "", image: "", longitude: 0.0, latitude: 0.0, directions: "")
-        
-//It looked originally like this
-        
-//        self.init(name: "", description: "", image: "", longitude: 0.0, latitude: 0.0, directions: "")
-        
         
     }
     
