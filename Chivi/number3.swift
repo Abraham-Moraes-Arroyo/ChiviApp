@@ -103,21 +103,7 @@ struct number3: View {
                                         .foregroundColor(.white)
 
                     
-                    //                    Popular Cites
-                                        HStack{
-                                            Image("rat")
-                                                .resizable()
-                                                .frame(width: 50, height: 50)
-                                            NavigationLink(destination: dynamictours(tourId: "OnlineRec")){
-                                                Text("Online Recomendations")
-                                                
-                                                
-                                            }
-                                        }// end of blueline
-                    //                    agora
-                    //                    41.868123, -87.623380
-                                        .listRowBackground(Color.blue)
-                                        .foregroundColor(.white)
+           
                     
                 } // end of List
                 
@@ -125,6 +111,25 @@ struct number3: View {
                     Text("More Extensive (10+ stops)")
                         .padding()
                     List{
+                        
+                        
+                        //                    Popular Cites
+                                            HStack{
+                                                Image("rat")
+                                                    .resizable()
+                                                    .frame(width: 50, height: 50)
+                                                NavigationLink(destination: dynamictours(tourId: "OnlineRec")){
+                                                    Text("Online Recomendations")
+                                                    
+                                                    
+                                                }
+                                            }// end of blueline
+                        //                    agora
+                        //                    41.868123, -87.623380
+                                            .listRowBackground(Color.blue)
+                                            .foregroundColor(.white)
+                        
+                        
                         HStack{
                             Image("polishtriangle")
                                 .resizable()
